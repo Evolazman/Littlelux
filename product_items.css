@@ -1,0 +1,47 @@
+.product-item {
+    width: 25%;
+    height: 594px;
+    padding: 0;
+}
+
+.product-item img {
+    width: 100%;
+
+}
+
+.product-item .detail h1 {
+    text-align: center;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+
+.product-item .detail p {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #7D5A50;
+    text-align: center;
+}
+
+@media (max-width: 475px) {
+    .product-item {
+        width: 50%;
+        height: 426px;
+        margin-bottom: 100px; 
+        border: solid black 1px;
+    }
+    .product-item .detail p , .product-item .detail h1 {
+        font-size: 16px;
+    }
+    .product-item img {
+        width: 188px;
+        height: 254px;
+    
+    }
+}
