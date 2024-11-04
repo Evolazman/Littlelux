@@ -7,6 +7,7 @@ body {
     padding-bottom: 3rem;
     color: #5a5a5a;
     font-family: "Petrona", serif;
+    box-sizing: border-box;
 }
 
 
@@ -180,13 +181,15 @@ svg.bd-placeholder-img rect {
 .carousel-caption h1 {
     font-size: 96px;
 }
-.carousel-caption p {
+.carousel-caption .caption {
     font-size: 40px;
     font-family: "Prompt", serif;
 }
 
 
 /* Hero Banner */
+
+
 
 /* RESPONSIVE CSS
   -------------------------------------------------- */

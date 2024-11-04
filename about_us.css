@@ -1,0 +1,55 @@
+.about-us .content h2 {
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #7D5A50;
+
+
+}
+
+.about-us .content p {
+    /* แฟชั่นเด็กได้กลายเป็นเรื่องที่ผู้ปกครองหลายคน ให้ความสำคัญมากขึ้นไม่ใช่แค่เพียงเสื้อผ้าที่เด็ก สวมใส่เพื่อความสบายหรือความเหมาะสม ตามวัยเท่านั้นแต่ยังกลายเป็นวิธีที่ผู้ปกครอง แสดงถึงความสนใจในสไตล์และเอกลักษณ์ ของเด็กแต่ละคน */
+
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    color: #7D5A50;
+    margin-left: 20px;
+}
+.btn-primary-color-custom-about-us {
+    background-color: #7D5A50;
+    color: #FFF9E3;
+    width: 200px;
+    height: 55px;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Prompt", serif;
+}
+
+
+
+@media (max-width: 475px) {
+    .about-us .content{
+        text-align: center;
+    }
+    .about-us .btn-center {
+        display: flex;
+        justify-content: center;
+
+    }
+    .about-us .content p {
+        margin-left: 0;
+        margin-bottom: 5px;
+        padding: 20px;
+    }
+}
