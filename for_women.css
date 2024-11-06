@@ -85,7 +85,7 @@
   div.bx-viewport {
     width: 375px;
     height: 315px !important;
-    margin-left:140px !important;
+    margin-left:20% !important;
   }
 
   @media (min-width: 475px) {
