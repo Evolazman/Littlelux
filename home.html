@@ -45,7 +45,7 @@
     crossorigin='anonymous'></script>
 
 
-    
+
 <!-- css link -->
 
 <!-- bx slider -->
@@ -309,13 +309,20 @@
         <!-- for women  -->
         <!-- for women  -->
         <div class="container for-women">
-            <h1>สำหรับเด็กผู้หญิง</h1>
-            <br>
-            <p><a href="#">Discover</a></p>
-            <div class="arrow">
-                <span onclick="prev_slide(-1)"  id="slider-prev" class="ep--arrow-left"></span>
-                <span onclick="next_slide(1)"  id="slider-next" class="ep--arrow-right"></span>
+
+            <div class="discover-box">
+                <div class="content">
+                    <h1>สำหรับเด็กผู้หญิง</h1>
+                    <br>
+                    <p><a href="#">Discover</a></p>
+                    <div class="arrow">
+                        <span onclick="prev_slide(-1)" id="slider-prev" class="ep--arrow-left"></span>
+                        <span onclick="next_slide(1)" id="slider-next" class="ep--arrow-right"></span>
+                    </div>
+                </div>
+               
             </div>
+
             <div class="slider4">
                 <div id="slide1" class="slide active">
                     <a href="#">
@@ -373,7 +380,7 @@
                 wrapperClass: '.ext',
                 controls: true,
                 startSlide: 0,
-                infiniteLoop: false ,
+                infiniteLoop: false,
                 // shrinkItems: true,
 
 
@@ -392,56 +399,49 @@
 
             });
         });
-        
+
         var current = 1
         function next_slide(n) {
             // console.log(pp)
-            current+=n
-            
-            // if (current === 0) {
-            //     current = 5
-            // }
-            // if (current === 6) {
-            //     current = 1
-            // }
+            current += n
             console.log(current)
-            if (current === 6 ) {
+            if (current === 6) {
                 current = 5
-                return
+                // return
             }
             // if (current === 5 || current === 0 ) {
             //     return
             // }
-            document.getElementById("slide" +current).classList.add("active");
+            document.getElementById("slide" + current).classList.add("active");
             let prev = (current - 1)
             if (prev === 0) {
                 prev = 5
             }
-            document.getElementById("slide" +prev).classList.remove("active");
+            document.getElementById("slide" + prev).classList.remove("active");
         }
         function prev_slide(p) {
-            current+=p
-            
-            
+            current += p
+
+
             console.log(current)
             if (current === 0) {
                 current = 1
-                return
+                // return
             }
             // if (current === 5 || current === 0 ) {
             //     console.log("return"+current)
             //     return
             // }
-            document.getElementById("slide" +current).classList.add("active");
+            document.getElementById("slide" + current).classList.add("active");
             let prev = (current + 1)
             if (prev === 6) {
                 prev = 5
             }
-            document.getElementById("slide" +prev).classList.remove("active");
-            
+            document.getElementById("slide" + prev).classList.remove("active");
+
         }
 
-        
+
 
 
     </script>
