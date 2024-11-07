@@ -5,6 +5,7 @@
     align-items: center; */
     text-align: center;
     --bs-gutter-x : 0rem;
+    margin-bottom: 100px;
     
 }
 .for-women p{
@@ -71,6 +72,7 @@
   }
   .for-women .slider4 .slide a img:hover {
   transform: scale(1.1);
+  transition: all 0.35s;
   }
   .for-women .bx-viewport {
     width: 100%;
@@ -80,12 +82,14 @@
     
   }
   .slider4 .slide.active {
-    transform: scale(1.1); /* ขยายภาพ active เป็น 120% */
+    transform: scale(1.1); /* ขยายภาพ active เป็น 
+    120% */
+    transition: all 0.35s;
   }
   div.bx-viewport {
-    width: 375px;
+    width: 100% !important;
     height: 315px !important;
-    margin-left:20% !important;
+    /* margin-left:20% !important; */
   }
 
   @media (min-width: 475px) {
@@ -98,6 +102,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 4px;
+      /* overflow: hidden; */
       
     }
     .discover-box .content .arrow {
@@ -126,10 +131,16 @@
       height: 600px;
       
     }
+    .for-women .bx-viewport {
+      margin: 0 !important;
+    }
     div.bx-viewport {
-      width:900px !important;
+      width:160% !important;
       height: 458px !important;
       margin-left:0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      /* overflow: hidden; */
       
     }
     .for-women .slider4 .slide a img{
