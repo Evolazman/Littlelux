@@ -39,14 +39,18 @@
     font-size: 24px;
     font-weight: 300;
 }
+.content-trends h3 {
+    display: none;
+}
 
 @media (max-width: 475px) {
+
     .design-ai {
         height: 100% !important;
 
     }
     .design-ai-con {
-        margin-bottom: 500px;
+        margin-bottom: 200px;
         height: 1250px;
     }
     .design-ai img {
@@ -76,5 +80,17 @@
     .design-ai .content p.content-2 {
         margin-top: 200px;
         text-align: end;
+    }
+    .content-trends h3 {
+        display: block;
+        color: #7D5A50;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    .content-trends .btn-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
