@@ -1,0 +1,49 @@
+.trends .content-trends h2 {
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #7D5A50;
+    text-align: end;
+}
+
+.trends .content-trends p {
+    font-size: 20px;
+    width: 90%;
+    float: right;
+    font-weight: 300;
+    color: #7D5A50;
+}
+/* .marketing {
+    padding: 0px;
+} */
+.trends .row .content-trends {
+    text-align: end;
+    align-items: flex-end;
+    /* width: 100%; */
+} 
+.trends .row .content-trends {
+    font-family: "Prompt", serif;
+}
+
+.trends .row p.btn-center a {
+    margin-top: 0 !important;
+    float: right;
+    /* color: rebeccapurple; */
+    font-family: "Prompt", serif;
+}
+.trends {
+    margin-top: 30px;
+}
+
+@media (max-width: 475px) {
+    .trends .row .content-trends {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        float: left;
+    }
+}

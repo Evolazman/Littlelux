@@ -1,0 +1,40 @@
+.contact {
+  margin-top: 50px;  
+  background-color: aquamarine;
+  /* margin: 0;
+  padding: 0;
+  width: 100%; */
+  /* text-align: center; */
+}
+.head-contact h1 {
+    font-family: "Prompt", serif;
+    font-size: 20px;
+}
+.head-contact p {
+    font-family: "Prompt", serif;
+    font-size: 16px;
+}
+.head-contact .input-email {
+    
+}
+.head-contact input {
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    float: left;
+    margin-right: 10px;
+}
+.head-contact button {
+    width: 105px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+}
+.head-contact button:hover {
+    background-color: white ;
+    color:#7D5A50 ;
+    transition: all 0.35s;
+    
+}
+
+
