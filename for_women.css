@@ -132,14 +132,15 @@
       
     }
     .for-women .bx-viewport {
-      margin: 0 !important;
+      margin: 20px !important;
+      width: 400px;
     }
     div.bx-viewport {
-      width:160% !important;
+      width:120% !important;
       height: 458px !important;
-      margin-left:0 !important;
-      padding: 0 !important;
-      margin: 0 !important;
+      margin-left:0px !important;
+      /* padding: 0 !important;
+      margin: 0 !important; */
       /* overflow: hidden; */
       
     }

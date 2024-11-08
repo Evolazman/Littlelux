@@ -1,0 +1,42 @@
+.design-ai img {
+    width: 100%;
+}
+.design-ai {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container-fluid.design-ai-con{
+    width: 100% !important;
+    /* height: 700px; */
+
+
+}
+.btn-primary-color-custom {
+    border: 0;
+    margin-bottom: 30px;
+}
+.design-ai-con .design-ai .content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 50%;
+    height: 50%;
+    /* background-color: aquamarine; */
+    color: white;
+    /* font-family: "Prompt", serif; */
+}
+.design-ai-con .design-ai .content p , .design-ai-con .design-ai .content .btn-primary-color-custom {
+    font-family: "Prompt", serif;
+    font-size: 24px;
+    font-weight: 300;
+}
