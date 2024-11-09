@@ -87,6 +87,13 @@ a.see-more-link {
     justify-content: flex-end;
     align-items: center;
 }
+.product-item:hover {
+    border: #7D5A50 solid 1px ;
+    border-radius: 4px;
+   transition: all 0.35s;
+   transform: scale(1.1);
+   z-index: 100;
+}
 
 @media (max-width: 475px) {
     .see-more {

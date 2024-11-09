@@ -30,6 +30,7 @@
 .carousel-caption div.col a:hover {
     color: #FFF9E3;   
 }
+
 @media (max-width : 475px) {
     .carousel-item.design-gal {
         height: 274px;
@@ -54,6 +55,7 @@
     .container .carousel-caption {
         margin-left: -80px;
     }
+
 
 
 }
