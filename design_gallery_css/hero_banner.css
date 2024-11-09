@@ -28,9 +28,7 @@
     text-decoration: none;
 }
 .carousel-caption div.col a:hover {
-    color: #FFF9E3;
-
-    
+    color: #FFF9E3;   
 }
 @media (max-width : 475px) {
     .carousel-item.design-gal {
