@@ -65,6 +65,8 @@ nav.navbar {
 
 #navbarCollapse .navbar-nav li a {
     color: #fff;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 #navbarCollapse .navbar-nav li a:hover {
@@ -190,6 +192,7 @@ svg.bd-placeholder-img rect {
     font-size: 40px;
     font-family: "Prompt", serif;
 }
+
 
 
 /* Hero Banner */
