@@ -1,0 +1,32 @@
+
+.carousel-item.design-gal {
+    height: 378px;
+    margin-top: 10px;
+}
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-caption h1 {
+    font-size: 64px !important;
+    font-weight: 300;
+}
+.carousel-caption p  {
+    font-size: 24px !important;
+    font-weight: 300;
+}
+.carousel-caption h1 , .carousel-caption p {
+    text-align: center;
+}
+.border-right {
+    border-right :1px solid rgb(255, 255, 255);
+}
+.carousel-caption div.col a {
+    color: white;
+    text-decoration: none;
+}
+.carousel-caption div.col a:hover {
+    color: #FFF9E3;
+    
+}
