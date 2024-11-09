@@ -11,6 +11,7 @@
 .carousel-caption h1 {
     font-size: 64px !important;
     font-weight: 300;
+    margin-bottom: 25px;
 }
 .carousel-caption p  {
     font-size: 24px !important;
@@ -28,6 +29,33 @@
 }
 .carousel-caption div.col a:hover {
     color: #FFF9E3;
-    but
+
     
+}
+@media (max-width : 475px) {
+    .carousel-item.design-gal {
+        height: 274px;
+    }
+    .carousel-caption h1 {
+        font-size: 32px !important;
+        font-weight: 300;
+        text-align: start;
+        margin-bottom: 0;
+    }
+    .carousel-caption p  {
+        font-size: 16px !important;
+        font-weight: 300;
+        text-align: start;
+    }
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+    }
+    .container .carousel-caption {
+        margin-left: -80px;
+    }
+
+
 }
