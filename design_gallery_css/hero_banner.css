@@ -2,6 +2,7 @@
 .carousel-item.design-gal {
     height: 378px;
     margin-top: 10px;
+    width: 100% !important;
 }
 .carousel-caption {
     display: flex;
@@ -30,15 +31,18 @@
 .carousel-caption div.col a:hover {
     color: #FFF9E3;   
 }
-
+.design-gal-2 {
+    display: none;
+}
 @media (max-width : 475px) {
     .carousel-item.design-gal {
+        width: auto;
         height: 274px;
     }
     .carousel-caption h1 {
         font-size: 32px !important;
         font-weight: 300;
-        text-align: start;
+        text-align: start !important;
         margin-bottom: 0;
     }
     .carousel-caption p  {
@@ -50,10 +54,17 @@
         display: flex;
         flex-direction: column;
         align-items: start;
+       
         
     }
     .container .carousel-caption {
         margin-left: -80px;
+    }
+    .design-gal-2 {
+        display: block;
+    }
+    .design-gal {
+        display: none;
     }
 
 

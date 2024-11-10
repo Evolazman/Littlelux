@@ -23,7 +23,7 @@
     position: relative;
 }
 .collection {
-    margin-bottom: 500px;
+    margin-bottom: 100px;
     margin-top: 50px;
 }
 .content-lifewear , .content-summer {
@@ -53,4 +53,85 @@
 }
 .collection .summer {
     margin-top: 130px;
+}
+.content-lifewear-sm {
+    display: none;
+}
+.main-img-sm {
+    display: none;
+}
+@media (max-width : 475px) {
+    /* lifewear */
+    /* lifewear */
+    /* lifewear */
+    .lifewear {
+        /* position: relative; */
+    }
+    .content-lifewear {
+        position: absolute;
+        display: none;
+        bottom: 30px;
+        height: 163px !important;
+        /* width: 90% !important; */
+        /* background-color: #7D5A50; */
+
+    }    
+    .img-lifewear .main-img {
+        width: 100% !important;
+        height: 430px !important;
+    }
+    .img-lifewear .second-img {
+        display: none;
+        
+    }
+    .content-lifewear-sm {
+        display: block;
+        position: absolute;
+        /* left: 10px; */
+        /* bottom: 30px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* left:100px; */
+        width: 93% !important;
+        text-align: center;
+        background-color: #7D5A50;
+        height: 163px;
+        bottom: 0 !important;
+        border-radius: 4px;
+        position: absolute;
+        right: 12px;
+        left: 12px;
+        background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(4.2px);
+
+
+    }
+    .main-img-sm {
+        display: block;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .main-img {
+        display: none;
+    }
+    .img-lifewear {
+        overflow: hidden;
+    }
+
+    /* summer */
+    /* summer */
+    /* summer */
+    .second-img {
+        display: none;
+    }
+    .content-summer {
+        display: none;
+    }
+
+
+
+    
 }

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="design_gallery_css/product.css">
     <link rel="stylesheet" href="design_gallery_css/the_most_popular.css">
     <link rel="stylesheet" href="design_gallery_css/collection.css">
+    <link rel="stylesheet" href="design_gallery_css/slider_show.css">
 
 
 
@@ -42,11 +43,10 @@
 <link rel="stylesheet" href="home_style_css/for_women.css">
 <link rel="stylesheet" href="home_style_css/category.css">
 <link rel="stylesheet" href="home_style_css/design-ai.css">
-<link rel="stylesheet" href="home_style_css/trends.css">
-<link rel="stylesheet" href="home_style_css/contact.css"> -->
+<link rel="stylesheet" href="home_style_css/trends.css"> -->
+<link rel="stylesheet" href="home_style_css/contact.css">
 <link rel="stylesheet" href="home_style_css/footer.css">
 
-<!-- <link rel="stylesheet" href="gg.css"> -->
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.js'
     integrity='sha512-k8FMS+oX2UczLWhVnKumkY9JqMaOIS/a3SKxV1+d6dd4DwU17qDppu2WxpZ9IX6QM7dqLzhZtT0ncGpeR+P3Mg=='
@@ -117,7 +117,7 @@
                                 href="design_gallery.html">Design Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Let’s Design</a>
+                            <a class="nav-link" href="Lets_Design.html">Let’s Design</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Trends</a>
@@ -158,6 +158,7 @@
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <img class="design-gal" src="img/Design gal.png" alt="" srcset="">
+                        <img class="design-gal-2" src="img/Rectangle 1178.png" alt="" srcset="">
                     </svg>
 
                     <div class="container">
@@ -193,8 +194,8 @@
             <div class="row ">
                 <div class="col-6 row-io">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle bg-color-sort-by" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle bg-color-sort-by" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Sort by
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -209,8 +210,8 @@
                     </div>
 
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle bg-color-filter" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle bg-color-filter" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                 class="bi bi-filter" viewBox="0 0 16 16">
                                 <path
@@ -224,22 +225,22 @@
                                         ราคา
                                     </h5>
                                     <p>
-                                        <div class="col box-center">
-                                            <input type="radio" name="price" value="low-1000">
-                                            <label class="price" for="contactChoice1">น้อยกว่า 1,000</label>
-                                        </div>
+                                    <div class="col box-center">
+                                        <input type="radio" name="price" value="low-1000">
+                                        <label class="price" for="contactChoice1">น้อยกว่า 1,000</label>
+                                    </div>
 
-                                        <div class="col box-center">
-                                            <input type="radio" name="price" value="1000-2000">
-                                            <label class="price" for="contactChoice1">1,000 - 2,000</label>
-                                        </div>
+                                    <div class="col box-center">
+                                        <input type="radio" name="price" value="1000-2000">
+                                        <label class="price" for="contactChoice1">1,000 - 2,000</label>
+                                    </div>
 
-                                        <div class="col box-center">
-                                            <input type="radio" name="price" value="high-3000">
-                                            <label class="price" for="contactChoice1">มากกว่า 3,000</label>
-                                        </div>
+                                    <div class="col box-center">
+                                        <input type="radio" name="price" value="high-3000">
+                                        <label class="price" for="contactChoice1">มากกว่า 3,000</label>
+                                    </div>
                                     </p>
-                                
+
 
                                 </div>
                                 <div style="margin-top: 20px;" class="row">
@@ -247,36 +248,36 @@
                                         ประเภทสินค้า (Category)
                                     </h5>
                                     <p>
-                                        <div class="col ">
-                                            <input type="checkbox" name="category" value="shirt">
-                                            <label class="category" for="contactChoice1">เสื้อ</label>
-                                        </div>
+                                    <div class="col ">
+                                        <input type="checkbox" name="category" value="shirt">
+                                        <label class="category" for="contactChoice1">เสื้อ</label>
+                                    </div>
 
-                                        <div class="col ">
-                                            <input type="checkbox" name="category" value="pants">
-                                            <label class="category" for="contactChoice1">กางเกง</label>
-                                        </div>
+                                    <div class="col ">
+                                        <input type="checkbox" name="category" value="pants">
+                                        <label class="category" for="contactChoice1">กางเกง</label>
+                                    </div>
 
-                                        <div class="col ">
-                                            <input type="checkbox" name="category" value="swimming-costume">
-                                            <label class="category" for="contactChoice1">ชุดว่ายน้ำ</label>
-                                        </div>
+                                    <div class="col ">
+                                        <input type="checkbox" name="category" value="swimming-costume">
+                                        <label class="category" for="contactChoice1">ชุดว่ายน้ำ</label>
+                                    </div>
 
-                                        <div class="col ">
-                                            <input type="checkbox" name="category" value="hat">
-                                            <label class="category" for="contactChoice1">หมวก</label>
-                                        </div>
+                                    <div class="col ">
+                                        <input type="checkbox" name="category" value="hat">
+                                        <label class="category" for="contactChoice1">หมวก</label>
+                                    </div>
 
-                                        <div class="col ">
-                                            <input type="checkbox" name="category" value="shoe">
-                                            <label class="category" for="contactChoice1">รองเท้า</label>
-                                        </div>
+                                    <div class="col ">
+                                        <input type="checkbox" name="category" value="shoe">
+                                        <label class="category" for="contactChoice1">รองเท้า</label>
+                                    </div>
 
-                                        <div class="col ">
-                                            <input type="checkbox" name="category" value="Hoodie">
-                                            <label class="category" for="contactChoice1">เสื้อฮูด</label>
-                                        </div>
-                                    
+                                    <div class="col ">
+                                        <input type="checkbox" name="category" value="Hoodie">
+                                        <label class="category" for="contactChoice1">เสื้อฮูด</label>
+                                    </div>
+
                                     </p>
                                 </div>
 
@@ -286,7 +287,7 @@
                     </div>
 
                     <button class="btn btn-secondary search-btn" type="button">search</button>
-                
+
                 </div>
 
                 <div class="col-6 see-more">
@@ -344,8 +345,8 @@
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
                 </div>
-                
-                
+
+
             </div>
         </div>
         <!-- Product -->
@@ -355,7 +356,7 @@
         <!-- The most popular -->
         <!-- The most popular -->
         <!-- The most popular -->
-         <div class="container the-most-popular">
+        <div class="container the-most-popular">
             <div class="row">
                 <h1>The most popular</h1>
             </div>
@@ -382,52 +383,159 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
         <!-- The most popular -->
         <!-- The most popular -->
         <!-- The most popular -->
-         
+
 
         <!-- LifeWear 2024 Fall/Winter Collection -->
         <!-- LifeWear 2024 Fall/Winter Collection -->
         <!-- LifeWear 2024 Fall/Winter Collection -->
 
-         <div class="container collection">
+        <div class="container collection">
+
             <div class="row lifewear">
-                <div class="col-8 img-lifewear">
+                <div class="col-12 col-lg-8 img-lifewear">
                     <img class="main-img" src="img/Winter Collection.png" alt="" srcset="">
-                    
+                    <img class="main-img-sm" src="img/Rectangle 1317.png" alt="" srcset="">
+
+                    <div class="content-lifewear-sm text-center">
+                        <h4>LifeWear 2024 Fall/Winter <br> Collection</h4>
+                        <button class="btn btn-secondary" type="button">Buy Now</button>
+                    </div>
+
                     <img class="second-img" src="img/Rectangle 1319.png" alt="" srcset="">
-                    
-                   
                 </div>
                 <div class="col-4 content-lifewear">
                     <h4>LifeWear 2024 Fall/Winter <br> Collection</h4>
                     <button class="btn btn-secondary" type="button">Buy Now</button>
                 </div>
             </div>
+
             <div class="row summer">
                 <div class="col-4 content-summer">
                     <h4>The Summer Collection</h4>
-                    <button class="btn btn-secondary" type="button">Buy Now</button>
+                        <button class="btn btn-secondary" type="button">Buy Now</button>
                 </div>
-                <div class="col-8 img-summer">
+                <div class="col-12 col-lg-8 img-summer">
                     <img class="main-img" src="img/summer-1.png" alt="" srcset="">
-                    
+                    <img class="main-img-sm" src="img/Rectangle 1319 (1).png" alt="" srcset="">
+                    <div class="content-lifewear-sm text-center">
+                        <h4>The Summer Collection</h4>
+                        <button class="btn btn-secondary" type="button">Buy Now</button>
+                    </div>
                     <img class="second-img" src="img/summer-2.png" alt="" srcset="">
-                
+
                 </div>
             </div>
-         </div>
+        </div>
 
 
         <!-- LifeWear 2024 Fall/Winter Collection -->
         <!-- LifeWear 2024 Fall/Winter Collection -->
         <!-- LifeWear 2024 Fall/Winter Collection -->
+
+        <!-- slider show  -->
+        <!-- slider show  -->
+        <!-- slider show  -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide show (2).png" class="d-block w-100" alt="img/Rectangle 1174.png">
+                <div class="carousel-caption  d-md-block">
+                  <h5>The Summer Collection</h5>
+                  <button class="btn btn-secondary" type="button">Buy Now</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Rectangle 1174.png" class="d-block w-100" alt="img/Rectangle 1174.png">
+                <div class="carousel-caption  d-md-block">
+                  <h5>LifeWear 2024 Fall/Winter
+                    Collection</h5>
+                    <button class="btn btn-secondary" type="button">Buy Now</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Rectangle 1318.png" class="d-block w-1000" alt="img/Rectangle 1174.png">
+                <div class="carousel-caption  d-md-block">
+                  <h5>The Summer Collection</h5>
+                  <button class="btn btn-secondary" type="button">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- Contact -->
+        <!-- Contact -->
+        <!-- Contact -->
+        <div class="container contact">
+            <div class="row head-contact">
+                <div class="col-lg-6">
+                    <h1>ลงทะเบียนเพื่อรับจดหมายข่าวของเรา</h1>
+                    <p>ลงทะเบียนวันนี้เพื่อรับส่วนลดพิเศษ</p>
+
+                </div>
+                <div class="col-lg-6 input-email">
+                    <button type="button" class="btn-primary-color-custom">Subscribe</button>
+                    
+                    <input type="email" placeholder="Your email">
+                </div>
+            </div>
+            <div class="row link-contact">
+                <div class="col-lg-2 col">
+                    <h3>Products</h3>
+                    <p><a href="">Libraries</a></p>
+                    <p><a href="">CLI</a></p>
+                    <p><a href="">Studio</a></p>
+                    <p><a href="">Hosting</a></p>
+                </div>
+                <div class="col-lg-2 col">
+                    <h3>Resources</h3>
+                    <p><a href="">Docs</a></p>
+                    <p><a href="">Learn</a></p>
+                    <p><a href="">Examples</a></p>
+                    <p><a href="">Changelog</a></p>
+
+                </div>
+                <div class="col-lg-2 col">
+                    <h3>Company</h3>
+                    <p><a href="">About us</a></p>
+                    <p><a href="">Contact</a></p>
+                    <p><a href="">Blog</a></p>
+
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <img src="img/Group 181.svg" alt="" srcset="">
+        </footer>
+
+
+        
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    
 </body>
 
 </html>
