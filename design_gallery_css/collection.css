@@ -1,0 +1,56 @@
+.collection .img-lifewear img.main-img  {
+    width: 85%;
+    /* height: 100%; */
+    /* margin-top: 500px; */
+}
+.collection .img-summer img.main-img {
+    width: 85%;
+    float: right;
+}
+.collection .img-lifewear img.second-img  {
+    position: absolute;
+    bottom: -30px;
+    right: 100px;
+    /* width: 100%; */
+}
+.collection .img-summer img.second-img  {
+    position: absolute;
+    bottom: -30px;
+    left: 100px;
+}
+
+.collection .img-lifewear , .collection .img-summer {
+    position: relative;
+}
+.collection {
+    margin-bottom: 500px;
+    margin-top: 50px;
+}
+.content-lifewear , .content-summer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-lifewear h4 ,.content-summer h4 {
+    font-size: 32px;
+    color: #7D5A50 ;
+}
+.content-lifewear button , .content-summer button{
+    width: 200px;
+    height: 54px;
+    background-color: #7D5A50 !important;
+    font-size: 32px;
+    padding: 3px !important;
+    font-weight: 300;
+}
+.content-lifewear button:hover ,.content-summer button:hover{
+    background-color: #FFF9E3 !important;
+    color: #7D5A50 !important;
+    transition: all 0.35s;
+}
+.collection .summer {
+    margin-top: 130px;
+}
