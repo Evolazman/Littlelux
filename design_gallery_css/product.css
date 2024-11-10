@@ -16,7 +16,7 @@
     color: #7D5A50; /* สีตัวอักษร */
     border: none; /* เอาขอบออก */
     border-radius: 5px; /* มุมโค้ง */
-    font-size: 32px; /* ขนาดตัวอักษร */
+    font-size: 16px; /* ขนาดตัวอักษร */
     cursor: pointer; /* เปลี่ยน cursor เมื่อ hover */
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่มเอฟเฟกต์เมื่อ hover */
     text-align: center;
