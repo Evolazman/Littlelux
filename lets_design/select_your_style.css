@@ -1,10 +1,159 @@
+.select-your-style {
+    width: 100% !important;
+    height: 626px !important;
+    background-color: #7D5A50;
+    padding: 40px;
+    border-radius: 4px;
+}
+.select-your-style h1 {
+    font-size: 32px;
+    color: #FFF9E3;
+    font-weight: 300;
+}
+.box-style {
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.box-style:hover {
+    transform: scale(1.1);
+    transition: all 0.35s;
+}
+.box-style:hover img {
+    opacity: 0.8;
+}
+.box-style:active {
+    transform: scale(0.9);
+    transition: all 0.35s;
+    rotate: 10deg;
+    /* opacity: 5; */
+}
+.slider-item .content p {
+    color: white;
+    font-size: 24px;
+
+
+}
+.input-prompt-box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 32px;
+}
+.custom-input::placeholder {
+    font-size: 32px; /* กำหนดขนาดตัวอักษรของ placeholder */
+    color: #7D5A50; /* กำหนดสีตัวอักษร */
+    font-weight: 300; /* กำหนดความหนาของตัวอักษร */
+}
+
+.hide-lg {
+    display: none;
+}
+.hide-sm {
+    display: block;
+}
+.input-prompt-box textarea {
+    width: 100%;
+    height: 396.69px;
+    flex-wrap: wrap;
+    text-align: start;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    color: #7D5A50;
+    text-align: start; /* จัดตำแหน่งข้อความให้อยู่ทางซ้าย */
+    vertical-align: top; /* จัดข้อความให้เริ่มต้นจากด้านบน */
+    /* padding-bottom: 133px; */
+    /* padding: 0 !important; */
+    padding: 10px 10px;
+    resize: none; /* ปิดการขยายขนาดของ textarea */
+}
+.input-prompt-box:focus {
+    border: none; /* กรอบสีฟ้าเมื่อถูกเลือก */
+    background-color: #fff7e0; /* พื้นหลังสีครีมอ่อนเมื่อถูกเลือก */
+}
+.generate-btn-custom {
+    margin-top: 20px;
+    width: 200px !important;
+    height: 50px !important;
+    background-color: #fff7e0;
+    color: #7D5A50;
+    font-size: 24px;
+}
+
+.item-result {
+    width: 100%;
+    height: 358px;
+    /* background-color: #7D5A50; */
+}
+.item-result img {
+    width: 100%;
+}
+.mdi--heart-result {
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    right: 0;
+    top: 0;
+    background-color: #F4CB3F;
+}
+.item-result {
+    position: relative;
+}
+.item-result .name-product{
+    font-size: 20px;
+    color: #4A4A4A;
+    text-align: center;
+}
+.item-result .price{
+    font-size: 20px;
+    color: #7D5A50;
+    text-align: center;
+}
+.contact {
+    margin-top: 50px;
+}
+.recommend {
+    margin-top: 90px;
+}
+.result {
+    margin-top: 50px;
+}
+
+
 
 @media (max-width : 768px) {
+    .item-result {
+        width: 100%;
+        height: 100% ;
+        /* background-color: #7D5A50; */
+    }
+    .input-prompt-box {
+        font-size: 16px;
+    }
+    .custom-input::placeholder {
+        font-size: 16px; /* กำหนดขนาดตัวอักษรของ placeholder */
+        color: #7D5A50; /* กำหนดสีตัวอักษร */
+        font-weight: 300; /* กำหนดความหนาของตัวอักษร */
+    }
+    /* .hide-lg {
+        display: block !important;
+    } */
     .select-your-style {
         width: 100% !important;
         height: 626px !important;
         background-color: #7D5A50;
-        padding-top: 20px;
+        padding: 20px;
+        border-radius: 0px;
     }
     .select-your-style h1 {
         font-size: 32px;
@@ -28,6 +177,12 @@
         scrollbar-width: thin; /* ลดขนาด scrollbar */
         
     }
+    .hide-sm {
+        display: none !important;
+    }
+    .slider-item .box-style {
+        /* margin-right: 20px; */
+    }
     .scroll-container::-webkit-scrollbar {
         height: 8px; /* กำหนดความสูง scrollbar */
       }
@@ -48,13 +203,14 @@
 
     }
     .slider-item .hhhh {
-        position: relative;
+        /* position: relative; */
     }
     .slider-item .content p {
         /* position: absolute; */
         /* bottom: 0;right: 0; */
         /* transform: translate(-50%, -50%);  */
         color: white;
+        font-size: 16px;
 
     }
     .box-style {
@@ -78,6 +234,7 @@
         height: 36px !important;
         background-color: #fff7e0;
         color: #7D5A50;
+        font-size: 16px;
     }
     .input-prompt-box textarea {
         width: 100%;
@@ -93,6 +250,7 @@
         /* padding-bottom: 133px; */
         /* padding: 0 !important; */
         padding: 10px 10px;
+       
     }
     .input-prompt-box:focus {
         border: none; /* กรอบสีฟ้าเมื่อถูกเลือก */
