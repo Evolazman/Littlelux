@@ -143,14 +143,14 @@
     <div class="container design-ai-head">
         <div class="row">
             <div class="col">
-                <h1 >Design with Ai</h1>
+                <h1>Design with Ai</h1>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-3 order-md-0 order-1 tools">
                 <div class="row box-img-maker">
                     <button class="image-maker" type="button">
                         <span class="streamline--ai-generate-landscape-image-spark-solid set-icon-img-manker"></span>
@@ -176,24 +176,30 @@
                     </button>
                 </div>
             </div>
-            <div class="col-6 show-item">
+            <div class="col-12 col-md-6 show-item" id="show-item">
                 <div class="dropdown select-model">
-                    <a class="btn btn-secondary dropdown-toggle color-custom-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                      เลือกแบบ
+                    <a class="btn btn-secondary dropdown-toggle color-custom-btn" href="#" role="button"
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        เลือกแบบ
                     </a>
-                  
+
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">เสื้อ</a></li>
-                      <li><a class="dropdown-item" href="#">กางเกง</a></li>
-                      <li><a class="dropdown-item" href="#">ชุดว่ายน้ำ</a></li>
-                      <li><a class="dropdown-item" href="#">หมวก</a></li>
-                      <li><a class="dropdown-item" href="#">รองเท้า</a></li>
-                      <li><a class="dropdown-item" href="#">เสื้อฮูด</a></li>
+                        <li><a onclick="Change_img('shirt.jpg')" class="dropdown-item" href="#">เสื้อ</a></li>
+                        <li><a onclick="Change_img('J51150_Z35_001.jpg')" class="dropdown-item" href="#">กางเกง</a></li>
+                        <li><a onclick="Change_img('swim.jpg')" class="dropdown-item" href="#">ชุดว่ายน้ำ</a></li>
+                        <li><a onclick="Change_img('hat.jpg')" class="dropdown-item" href="#">หมวก</a></li>
+                        <li><a onclick="Change_img('shose.jpg')" class="dropdown-item" href="#">รองเท้า</a></li>
+                        <li><a onclick="Change_img('Rectangle 150.png')" class="dropdown-item" href="#">เสื้อฮูด</a>
+                        </li>
                     </ul>
                 </div>
-                <img src="img/Rectangle 150.png" alt="" srcset="">
+                <div id="img-show-box">
+                    <img src="img/Rectangle 150.png" alt="" srcset="">
+                </div>
+
+
             </div>
-            <div class="col-3">
+            <div class="col-3 tools">
                 <div class="row box-img-maker">
                     <button class="image-maker" type="button">
                         <span class="fluent--text-16-filled set-icon-img-manker"></span>
@@ -213,11 +219,71 @@
                     </button>
                 </div>
             </div>
+
+            <div class="col-12 tools-responsive">
+                <div class="row">
+                    <div class="col-4 box-img-maker">
+                        <button class="image-maker" type="button">
+                            <span
+                                class="streamline--ai-generate-landscape-image-spark-solid set-icon-img-manker"></span>
+                            <h4 class="name-tool">Image Maker</h4>
+                        </button>
+                    </div>
+                    <div class="col-4 box-img-maker">
+                        <button class="image-maker" type="button">
+                            <span class="ic--outline-edit set-icon-img-manker"></span>
+                            <h4 class="name-tool">Font Maker</h4>
+                        </button>
+                    </div>
+                    <div class="col-4 box-img-maker">
+                        <button class="image-maker " type="button">
+                            <span class="material-symbols--upload set-icon-img-manker"></span>
+                            <h4 class="name-tool">Upload</h4>
+                        </button>
+                    </div>
+                    <div class="col-4 box-img-maker">
+                        <button class="image-maker" type="button">
+                            <span class="mdi--heart set-icon-img-manker"></span>
+                            <h4 class="name-tool">Favorites</h4>
+                        </button>
+                    </div>
+                    <div class="col-4 box-img-maker">
+                        <button class="image-maker" type="button">
+                            <span class="fluent--text-16-filled set-icon-img-manker"></span>
+                            <h4 class="name-tool">Add Text</h4>
+                        </button>
+                    </div>
+                    <div class="col-4 box-img-maker">
+                        <button class="image-maker" type="button">
+                            <span class="mdi--color set-icon-img-manker"></span>
+                            <h4 class="name-tool">Color</h4>
+                        </button>
+                    </div>
+                    <div id="hide-tool-1" class="col-4 box-img-maker">
+                        <butto class="image-maker hide-tool-btn" type="button">
+                            <span class="ic--baseline-image set-icon-img-manker"></span>
+                            <h4 class="name-tool">Graphic</h4>
+                        </butto>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-5"></div>
+                        <div class="col-2">
+                            <button class="custom-btn-hide-tool" onclick="hide_tools()" type="button">
+                                <span class="ep--arrow-right"></span>
+                            </button>
+                        </div>
+                            
+                        <div class="col-5"></div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
-
-
     
+
+
+
 
     <!-- Contact -->
     <!-- Contact -->
@@ -275,7 +341,33 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-
+    <script>
+        function Change_img(img) {
+            document.getElementById("img-show-box").innerHTML = '<img src="img/' + img + '" alt="" srcset="">'
+        }
+        function hide_tools() {
+            try {
+                const element = document.getElementById('hide-tool-1')
+                const classes = element.classList;
+                console.log(classes[classes.length - 1])
+                if (classes[classes.length - 1] === "box-img-maker") {
+                    const html_text = '<button class="image-maker" type="button"><span class="ic--baseline-image set-icon-img-manker"></span><h4 class="name-tool">Graphic</h4></button>'
+                    document.getElementById("hide-tool-1").innerHTML = html_text;
+                    const element = document.getElementById("hide-tool-1");
+                    element.classList.add("show-btn-now"); // เพิ่มคลาส 'new-class' ให้กับ div
+                }else {
+                    const html_text = ''
+                    document.getElementById("hide-tool-1").innerHTML = html_text;
+                    const element = document.getElementById("hide-tool-1");
+                    element.classList.remove("show-btn-now");
+                }
+                
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        // hide_tools()
+    </script>
 </body>
 
 </html>
