@@ -36,6 +36,7 @@
 <link rel="stylesheet" href="home_style_css/footer.css">
 <link rel="stylesheet" href="lets_design/nav_custom.css">
 <link rel="stylesheet" href="lets_design/design_show_case.css">
+<link rel="stylesheet" href="contact_style.css">
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.js'
@@ -106,14 +107,14 @@
                             <a class="nav-link" aria-current="page" href="design_gallery.html">Design Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a style="text-decoration: underline;" class="nav-link" href="Lets_Design.html">Let’s
+                            <a  class="nav-link" href="Lets_Design.html">Let’s
                                 Design</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Trends</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contact_index.html" tabindex="-1" aria-disabled="true">Contact</a>
+                            <a class="nav-link " style="text-decoration: underline;" href="contact_index.html" tabindex="-1" aria-disabled="true">Contact</a>
                         </li>
                     </ul>
                     <div class="d-flex">
@@ -139,152 +140,198 @@
     <!-- Navbar -->
     <!-- Navbar -->
     <!-- Navbar -->
-
-    <div class="container design-ai-head">
-        <div class="row">
-            <div class="col">
-                <h1>Design with Ai</h1>
-            </div>
-        </div>
+    <div class="contact-section">
+        <h1 class="contact-title">CONTACT US</h1> 
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-3 order-md-0 order-1 tools">
-                <div class="row box-img-maker">
-                    <button class="image-maker" type="button">
-                        <span class="streamline--ai-generate-landscape-image-spark-solid set-icon-img-manker"></span>
-                        <h4 class="name-tool">Image Maker</h4>
-                    </button>
-                </div>
-                <div class="row box-img-maker">
-                    <button class="image-maker" type="button">
-                        <span class="ic--outline-edit set-icon-img-manker"></span>
-                        <h4 class="name-tool">Font Maker</h4>
-                    </button>
-                </div>
-                <div class="row box-img-maker">
-                    <button class="image-maker " type="button">
-                        <span class="material-symbols--upload set-icon-img-manker"></span>
-                        <h4 class="name-tool">Upload</h4>
-                    </button>
-                </div>
-                <div class="row box-img-maker">
-                    <button class="image-maker" type="button">
-                        <span class="mdi--heart set-icon-img-manker"></span>
-                        <h4 class="name-tool">Favorites</h4>
-                    </button>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 show-item" id="show-item">
-                <div class="dropdown select-model">
-                    <a class="btn btn-secondary dropdown-toggle color-custom-btn" href="#" role="button"
-                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                        เลือกแบบ
-                    </a>
-
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a onclick="Change_img('shirt.jpg')" class="dropdown-item" href="#">เสื้อ</a></li>
-                        <li><a onclick="Change_img('J51150_Z35_001.jpg')" class="dropdown-item" href="#">กางเกง</a></li>
-                        <li><a onclick="Change_img('swim.jpg')" class="dropdown-item" href="#">ชุดว่ายน้ำ</a></li>
-                        <li><a onclick="Change_img('hat.jpg')" class="dropdown-item" href="#">หมวก</a></li>
-                        <li><a onclick="Change_img('shose.jpg')" class="dropdown-item" href="#">รองเท้า</a></li>
-                        <li><a onclick="Change_img('Rectangle 150.png')" class="dropdown-item" href="#">เสื้อฮูด</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="img-show-box">
-                    <img src="img/Rectangle 150.png" alt="" srcset="">
-                </div>
-
-
-            </div>
-            <div class="col-3 tools">
-                <div class="row box-img-maker">
-                    <button class="image-maker" type="button">
-                        <span class="fluent--text-16-filled set-icon-img-manker"></span>
-                        <h4 class="name-tool">Add Text</h4>
-                    </button>
-                </div>
-                <div class="row box-img-maker">
-                    <button class="image-maker" type="button">
-                        <span class="mdi--color set-icon-img-manker"></span>
-                        <h4 class="name-tool">Color</h4>
-                    </button>
-                </div>
-                <div class="row box-img-maker">
-                    <button class="image-maker" type="button">
-                        <span class="ic--baseline-image set-icon-img-manker"></span>
-                        <h4 class="name-tool">Graphic</h4>
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-12 tools-responsive">
-                <div class="row">
-                    <div class="col-4 box-img-maker">
-                        <button class="image-maker" type="button">
-                            <span
-                                class="streamline--ai-generate-landscape-image-spark-solid set-icon-img-manker"></span>
-                            <h4 class="name-tool">Image Maker</h4>
-                        </button>
-                    </div>
-                    <div class="col-4 box-img-maker">
-                        <button class="image-maker" type="button">
-                            <span class="ic--outline-edit set-icon-img-manker"></span>
-                            <h4 class="name-tool">Font Maker</h4>
-                        </button>
-                    </div>
-                    <div class="col-4 box-img-maker">
-                        <button class="image-maker " type="button">
-                            <span class="material-symbols--upload set-icon-img-manker"></span>
-                            <h4 class="name-tool">Upload</h4>
-                        </button>
-                    </div>
-                    <div class="col-4 box-img-maker">
-                        <button class="image-maker" type="button">
-                            <span class="mdi--heart set-icon-img-manker"></span>
-                            <h4 class="name-tool">Favorites</h4>
-                        </button>
-                    </div>
-                    <div class="col-4 box-img-maker">
-                        <button class="image-maker" type="button">
-                            <span class="fluent--text-16-filled set-icon-img-manker"></span>
-                            <h4 class="name-tool">Add Text</h4>
-                        </button>
-                    </div>
-                    <div class="col-4 box-img-maker">
-                        <button class="image-maker" type="button">
-                            <span class="mdi--color set-icon-img-manker"></span>
-                            <h4 class="name-tool">Color</h4>
-                        </button>
-                    </div>
-                    <div id="hide-tool-1" class="col-4 box-img-maker">
-                        <butto class="image-maker hide-tool-btn" type="button">
-                            <span class="ic--baseline-image set-icon-img-manker"></span>
-                            <h4 class="name-tool">Graphic</h4>
-                        </butto>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-5"></div>
-                        <div class="col-2">
-                            <button class="custom-btn-hide-tool" onclick="hide_tools()" type="button">
-                                <span id="arrow-rotate" class="ep--arrow-right"></span>
-                            </button>
-                        </div>
-                            
-                        <div class="col-5"></div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+    <div class="content">
+        <p class="content-title">คุณไม่สามารถแก้ไขปัญหาของคุณได้ด้วยความช่วยเหลือจากคู่มือผู้ซื้อของเราหรือไม่?<br> 
+            ทีมบริการลูกค้าของเราพร้อมตอบคำถามทุกข้อเกี่ยวกับแบรนด์ LitterLux สินค้าที่เรานำเสนอ หรือคำสั่งซื้อที่คุณได้ทำไว้<br>
+            กรุณาส่งข้อความถึงเราผ่านแบบฟอร์มด้านล่างนี้ หรือโทรหาเราที่ 089-4522654 ตั้งแต่วันจันทร์ถึงวันศุกร์ ตั้งแต่เวลา 9.00 น. ถึง 17.00 น. <br> 
+            <br>
+            ในสถานการณ์ปัจจุบัน เรามุ่งมั่นที่จะจัดการกับคำถามของคุณทั้งหมด อย่างไรก็ตาม เนื่องจากมีคำขอเข้ามามากขึ้น <br>เวลาตอบกลับของเราอาจล่าช้ากว่าปกติ เราจะติดต่อกลับหาคุณโดยเร็วที่สุด!</p>
     </div>
+    <div class="question1">คุณมีลูกกี่คน?</div>
+    <div class="options1">
+        <input type="radio" id="child1" name="children" value="1">
+        <label for="child1">
+            <div class="circle"></div>
+            <span>1 คน</span>
+        </label>
+
+        <input type="radio" id="child2" name="children" value="2">
+        <label for="child2">
+            <div class="circle"></div>
+            <span>2 คน</span>
+        </label>
+
+        <input type="radio" id="child3" name="children" value="3">
+        <label for="child3">
+            <div class="circle"></div>
+            <span>3 คน</span>
+        </label>
+
+        <input type="radio" id="child4" name="children" value="4+">
+        <label for="child4">
+            <div class="circle"></div>
+            <span>4 คนขึ้นไป</span>
+        </label>
+    </div>
+    <div class="question2">คุณมีลูกเพศอะไร?</div>
+    <div class="options2">
+        <input type="radio" id="sex1" name="sex" value="1">
+        <label for="sex1">
+            <div class="circle"></div>
+            <span>ชาย</span>
+        </label>
+
+        <input type="radio" id="sex2" name="sex" value="2">
+        <label for="sex2">
+            <div class="circle"></div>
+            <span>หญิง</span>
+        </label>
+
+        <input type="radio" id="sex3" name="sex" value="3">
+        <label for="sex3">
+            <div class="circle"></div>
+            <span>อื่นๆ</span>
+        </label>
+    </div>
+    <div class="question3">ลูกคุณอายุอยู่ในช่วงไหน?</div>
+    <div class="options3">
+        <input type="radio" id="old1" name="old" value="1">
+        <label for="old1">
+            <div class="circle"></div>
+            <span>4-5 ปี</span>
+        </label>
+
+        <input type="radio" id="old2" name="old" value="2">
+        <label for="old2">
+            <div class="circle"></div>
+            <span>6-7 ปี</span>
+        </label>
+
+        <input type="radio" id="old3" name="old" value="3">
+        <label for="old3">
+            <div class="circle"></div>
+            <span>8-9 ปี</span>
+        </label>
+    </div>
+    <div class="question4">คุณซื้อสินค้าเสื้อผ้าเด็กบ่อยแค่ไหน?</div>
+    <div class="options4">
+        <input type="radio" id="buy1" name="buy" value="1">
+        <label for="buy1">
+            <div class="circle"></div>
+            <span>บ่อย</span>
+        </label>
+
+        <input type="radio" id="buy2" name="buy" value="2">
+        <label for="buy2">
+            <div class="circle"></div>
+            <span>ปานกลาง</span>
+        </label>
+
+        <input type="radio" id="buy3" name="buy" value="3">
+        <label for="buy3">
+            <div class="circle"></div>
+            <span>ไม่บ่อย</span>
+        </label>
+    </div>
+    <div class="question5">คุณเคยซื้อสินค้าจากเว็บไซต์ของเรากี่ครั้ง?</div>
+    <div class="options5">
+        <input type="radio" id="web1" name="web" value="1">
+        <label for="web1">
+            <div class="circle"></div>
+            <span>1 ครั้ง</span>
+        </label>
+
+        <input type="radio" id="web2" name="web" value="2">
+        <label for="web2">
+            <div class="circle"></div>
+            <span>2-3 ครั้ง</span>
+        </label>
+
+        <input type="radio" id="web3" name="web" value="3">
+        <label for="web3">
+            <div class="circle"></div>
+            <span>4-5 ครั้ง</span>
+        </label>
+
+        <input type="radio" id="web4" name="web" value="4">
+        <label for="web4">
+            <div class="circle"></div>
+            <span>ยังไม่เคยซื้อ</span>
+        </label>
+    </div>
+    <div class="question6">คุณเลือกซื้อสินค้าเสื้อผ้าเด็กจากปัจจัยใดเป็นหลัก?</div>
+    <div class="options6">
+        <label>
+            <input type="checkbox" name="factor" />
+            <div class="box"></div>
+            <span>คุณภาพสินค้า</span>
+        </label>
+        <label>
+            <input type="checkbox" name="factor" />
+            <div class="box"></div>
+            <span>ราคา</span>
+        </label>
+        <label>
+            <input type="checkbox" name="factor" />
+            <div class="box"></div>
+            <span>การออกแบบ</span>
+        </label>
+        <label>
+            <input type="checkbox" name="factor" />
+            <div class="box"></div>
+            <span>ความสะดวกในการสั่งซื้อ</span>
+        </label>
+    </div>
+    <div class="question7">คุณพึงพอใจกับคุณภาพของสินค้าหรือไม่?</div>
+    <div class="options7">
+        <input type="radio" id="quali1" name="buy" value="1">
+        <label for="quali1">
+            <div class="circle"></div>
+            <span>บ่อย</span>
+        </label>
+
+        <input type="radio" id="quali2" name="buy" value="2">
+        <label for="quali2">
+            <div class="circle"></div>
+            <span>ปานกลาง</span>
+        </label>
+
+        <input type="radio" id="quali3" name="buy" value="3">
+        <label for="quali3">
+            <div class="circle"></div>
+            <span>ไม่บ่อย</span>
+        </label>
+    </div>
+    <div class="question8">สิ่งที่คุณชอบมากที่สุดในเว็บไซต์เราคืออะไร?</div>
+    <div class="options8">
+        <label>
+            <input type="checkbox" name="preference" />
+            <div class="box"></div>
+            <span>ความง่ายในการใช้งาน</span>
+        </label>
+        <label>
+            <input type="checkbox" name="preference" />
+            <div class="box"></div>
+            <span>ความหลากหลายของสินค้า</span>
+        </label>
+        <label>
+            <input type="checkbox" name="preference" />
+            <div class="box"></div>
+            <span>บริการลูกค้า</span>
+        </label>
+        <label>
+            <input type="checkbox" name="preference" />
+            <div class="box"></div>
+            <span>อื่น ๆ...</span>
+        </label>
+    </div>
+    <button style="margin-bottom: 30px;" class="submit" type="button">
+        Submit
+    </button>
     
-
-
-
-
     <!-- Contact -->
     <!-- Contact -->
     <!-- Contact -->

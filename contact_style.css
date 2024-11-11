@@ -1,0 +1,755 @@
+body {
+    width: 100%;
+    /* height: 1000px; */
+    
+    font-family: "Petrona", serif;
+}
+* {
+
+    box-sizing: border-box;
+   
+}
+
+
+.contact-section{
+    width: 100%;
+    height: 391px;
+    background-image: url('contact_img/About\ us\ head.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 90px;
+    font-family: "Petrona", serif;
+}
+
+.contact-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-text {
+        font-size: 14px;
+    }
+    .contact-section {
+        width: 380px;
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .contact-section {
+        width: 380px;
+        height: 350px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .contact-text {
+        font-size: 12px;
+    }
+}
+.content{
+    font-size: 24px;
+    color: #7D5A50;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+    .content-title {
+        font-size: 24px;
+    }
+    .contact-section {
+        width: 100%;
+
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content{
+        padding: 40px 10px;
+    }
+
+    .content-title {
+        font-size: 16px;
+    }
+
+}
+
+.question1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7D5A50;
+}
+
+.options1 {
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-bottom: 20px;
+    /* margin-right: 1005px;
+    margin-left: 20px; */
+}
+/* Hide the radio button */
+.options1 input[type="radio"] {
+    display: none;
+}
+
+.options1 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7D5A50;
+    gap: 8px; 
+    /* margin-right: 5px; */
+    /* margin-left: 20px; */
+}
+label[for="child1"]{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+label[for="child2"]{
+    margin-left: 0px;
+    margin-right: 55px;
+}
+label[for="child3"]{
+    margin-left: 0px;
+    margin-right: 55px;
+}
+label[for="child4"]{
+    margin-left: 0px;
+}
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #7D5A50;
+    background-color: #7D5A50;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Change color when selected */
+.options1 input[type="radio"]:checked + label .circle {
+    background-color: #E0A23B; /* Yellow color when selected */
+    border-color: #7D5A50;
+}
+
+span{
+    font-family: "Prompt", sans-serif;
+}
+.question2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7D5A50;
+}
+.options2 {
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-bottom: 20px;
+    /* margin-right: 1170px;
+    margin-left: 20px; */
+}
+
+/* Hide the radio button */
+.options2 input[type="radio"] {
+    display: none;
+}
+
+.options2 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7D5A50;
+    gap: 8px; 
+    /* margin-right: 5px; */
+    /* margin-left: 20px; */
+}
+label[for="sex1"]{
+    margin-left: 50px;
+    margin-right: 55px;
+}
+label[for="sex2"]{
+    margin-left: 0px;
+    margin-right: 55px;
+}
+label[for="sex3"]{
+    margin-left: 0px;
+}
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #7D5A50;
+    background-color: #7D5A50;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Change color when selected */
+.options2 input[type="radio"]:checked + label .circle {
+    background-color: #E0A23B; /* Yellow color when selected */
+    border-color: #7D5A50;
+}
+.question3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7D5A50;
+}
+.options3 {
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-bottom: 20px;
+    /* margin-right: 1130px;
+    margin-left: 20px; */
+}
+
+/* Hide the radio button */
+.options3 input[type="radio"] {
+    display: none;
+}
+
+.options3 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7D5A50;
+    gap: 8px; 
+    /* margin-right: 5px; */
+    /* margin-left: 20px; */
+}
+label[for="old1"]{
+    margin-left: 50px;
+    margin-right: 40px;
+}
+label[for="old2"]{
+    margin-left: 0px;
+    margin-right: 51px;
+}
+label[for="old3"]{
+    margin-left: 0px;
+}
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #7D5A50;
+    background-color: #7D5A50;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Change color when selected */
+.options3 input[type="radio"]:checked + label .circle {
+    background-color: #E0A23B; /* Yellow color when selected */
+    border-color: #7D5A50;
+}
+.question4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7D5A50;
+}
+.options4 {
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-bottom: 20px;
+    /* margin-right: 1130px;
+    margin-left: 20px; */
+}
+
+/* Hide the radio button */
+.options4 input[type="radio"] {
+    display: none;
+}
+
+.options4 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7D5A50;
+    gap: 8px; 
+    /* margin-right: 5px; */
+    /* margin-left: 20px; */
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #7D5A50;
+    background-color: #7D5A50;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+label[for="buy1"]{
+    margin-left: 50px;
+    margin-right: 52px;
+}
+label[for="buy2"]{
+    margin-left: 0px;
+    margin-right: 28px;
+}
+label[for="buy3"]{
+    margin-left: 0px;
+}
+/* Change color when selected */
+.options4 input[type="radio"]:checked + label .circle {
+    background-color: #E0A23B; /* Yellow color when selected */
+    border-color: #7D5A50;
+}
+.question5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7D5A50;
+}
+.options5 {
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-bottom: 20px;
+    /* margin-right: 1130px;
+    margin-left: 20px; */
+}
+
+/* Hide the radio button */
+.options5 input[type="radio"] {
+    display: none;
+}
+
+.options5 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7D5A50;
+    gap: 8px; 
+    /* margin-right: 5px; */
+    /* margin-left: 20px; */
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #7D5A50;
+    background-color: #7D5A50;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+label[for="web1"]{
+    margin-left: 50px;
+    margin-right: 42px;
+}
+label[for="web2"]{
+    margin-left: 0px;
+    margin-right: 35px;
+}
+label[for="web3"]{
+    margin-left: 0px;
+    margin-right: 35px;
+}
+label[for="web4"]{
+    margin-left: 0px;
+}
+/* Change color when selected */
+.options5 input[type="radio"]:checked + label .circle {
+    background-color: #E0A23B; /* Yellow color when selected */
+    border-color: #7D5A50;
+}
+.question6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7D5A50;
+}
+
+.options6 {
+    display: flex;
+    flex-wrap: wrap; /* ทำให้ตัวเลือกเรียงหลายบรรทัดหากพื้นที่ไม่พอ */
+    /* justify-content: center; */
+    gap: 15px; /* ช่องว่างระหว่างตัวเลือก */
+    margin-bottom: 20px;
+}
+
+/* ซ่อน checkbox */
+.options6 input[type="checkbox"] {
+    display: none;
+}
+
+/* สไตล์สำหรับ label */
+.options6 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7D5A50;
+    gap: 8px;
+    margin-left: 50px;
+}
+
+/* สไตล์กล่องสี่เหลี่ยม */
+.box{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 2px solid #7D5A50;
+    background-color: #7D5A50;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+label[class="box1"]{
+    margin-left: 50px;
+    margin-right: 42px;
+}
+/* เครื่องหมายถูก */
+.box::after {
+    content: '✓';
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: -2px; /* ปรับตำแหน่งให้เครื่องหมายถูกตรงกลาง */
+    left: 4px;
+    display: none; /* ซ่อนเครื่องหมายถูกในตอนเริ่มต้น */
+}
+
+/* เมื่อเลือก checkbox แล้วแสดงเครื่องหมายถูก */
+.options6 input[type="checkbox"]:checked + .box {
+    background-color: #E0A23B; /* เปลี่ยนสีเป็นสีเหลืองเมื่อเลือก */
+    border-color: #7D5A50;
+}
+
+.options6 input[type="checkbox"]:checked + .box::after {
+    display: block; /* แสดงเครื่องหมายถูกเมื่อ checkbox ถูกเลือก */
+}
+.question7 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7D5A50;
+}
+.options7 {
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-bottom: 20px;
+    /* margin-right: 1130px;
+    margin-left: 20px; */
+}
+
+/* Hide the radio button */
+.options7 input[type="radio"] {
+    display: none;
+}
+
+.options7 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7D5A50;
+    gap: 8px; 
+    /* margin-right: 5px; */
+    /* margin-left: 20px; */
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #7D5A50;
+    background-color: #7D5A50;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+label[for="quali1"]{
+    margin-left: 50px;
+    margin-right: 52px;
+}
+label[for="quali2"]{
+    margin-left: 0px;
+    margin-right: 28px;
+}
+label[for="quali3"]{
+    margin-left: 0px;
+}
+/* Change color when selected */
+.options7 input[type="radio"]:checked + label .circle {
+    background-color: #E0A23B; /* Yellow color when selected */
+    border-color: #7D5A50;
+}
+.question8 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #7D5A50;
+}
+.options8 {
+    display: flex;
+    flex-wrap: wrap; /* ทำให้ตัวเลือกเรียงหลายบรรทัดหากพื้นที่ไม่พอ */
+    /* justify-content: center; */
+    gap: 2px; /* ช่องว่างระหว่างตัวเลือก */
+    margin-bottom: 50px;
+}
+
+/* ซ่อน checkbox */
+.options8 input[type="checkbox"] {
+    display: none;
+}
+
+/* สไตล์สำหรับ label */
+.options8 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7D5A50;
+    gap: 8px;
+    margin-left: 50px;
+    /* margin-bottom: 50px; */
+}
+
+/* สไตล์กล่องสี่เหลี่ยม */
+.box {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 2px solid #7D5A50;
+    background-color: #7D5A50;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* เครื่องหมายถูก */
+.box::after {
+    content: '✓';
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: -2px; /* ปรับตำแหน่งให้เครื่องหมายถูกตรงกลาง */
+    left: 4px;
+    display: none; /* ซ่อนเครื่องหมายถูกในตอนเริ่มต้น */
+}
+
+/* เมื่อเลือก checkbox แล้วแสดงเครื่องหมายถูก */
+.options8 input[type="checkbox"]:checked + .box {
+    background-color: #E0A23B; /* เปลี่ยนสีเป็นสีเหลืองเมื่อเลือก */
+    border-color: #7D5A50;
+}
+
+.options8 input[type="checkbox"]:checked + .box::after {
+    display: block; /* แสดงเครื่องหมายถูกเมื่อ checkbox ถูกเลือก */
+}
+.submit{
+    width: 200px;
+    height: 55px;
+    left: 70px;
+    top: 713px;
+    font-size: 32px;
+    background-color: #7D5A50;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    color: #FFF9E3;
+    font-weight: 300;
+    transition: all 0.3s;
+    margin-left: 50px;
+    font-family: "Petrona", serif;
+}
+.submit:hover{
+    color: #FFF9E3;
+    background-color: #EDD17B;
+}
+@media screen and (max-width: 768px) {
+     .options2,.options3,.options4,.options6,.options7,.options8{
+        gap: 0px; /* ลดระยะห่างระหว่างปุ่ม */
+        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    .circle {
+        width: 20px; /* ลดขนาดวงกลม */
+        height: 20px;
+    }
+
+    .options2 label,.options3 label,.options4 label,.options6 label,.options7 label ,.options8{
+        font-size: 16px; /* ลดขนาดฟอนต์ */
+        margin-left: 0px;
+    }
+    .question1 ,.question2,.question3,.question4,.question5,.question6,.question7,.question8{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    /* .options1 label{
+        margin-left: 50px;
+        
+    } */
+    .options1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0px;
+    }
+    .options1 label[for="child1"]{
+        gap: 0px;
+        margin-right: 130px;
+        margin-left: 20px;
+    }
+    .options1 label[for="child2"]{
+        gap: 0px;
+        margin-right: 130px;
+        margin-left: 15px;
+    }
+    .options1 label[for="child3"]{
+        gap: 2px;
+        margin-right: 125px;
+        margin-left: 20px;
+    }
+    .options1 label[for="child4"]{
+        /* margin-right: 150px; */
+        margin-left: 17px;
+        gap: 2px;
+    }
+    
+    .options5{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0px;
+    }
+    .options5 label[for="web1"]{
+        gap: 4px;
+        margin-right: 120px;
+        margin-left: 20px;
+    }
+    .options5 label[for="web2"]{
+        gap: 4px;
+        margin-right: 100px;
+        margin-left: 15px;
+    }
+    .options5 label[for="web3"]{
+        gap: 0px;
+        margin-right: 95px;
+        margin-left: 15px;
+    }
+    .options5 label[for="web4"]{
+        /* margin-right: 150px; */
+        margin-left: 17px;
+        gap: 4px;
+    }
+    .options6{
+        flex-direction: row; 
+        flex-wrap: wrap;
+        gap: 15px; 
+    }
+    .options8{
+        flex-direction: row; 
+        flex-wrap: wrap;
+        gap: 10px; 
+    }
+    
+    .submit{
+        width: 155px;
+        height: 45px;
+        font-size: 24px;
+        text-align: center;
+        margin-left: 142px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .options2,.options3,.options4,.options6,.options7,.options8 {
+        display: flex;
+        flex-direction: row; /* จัดเรียงในแนวนอนเหมือนเดิม */
+        flex-wrap: nowrap;
+        gap: 5px;
+        justify-content: flex-start;
+        /* margin-left: 5px; */
+    }
+    /* .options1 label{
+        gap: 0px;
+    } */
+    .circle {
+        width: 18px; /* ลดขนาดวงกลมเพิ่มเติม */
+        height: 18px;
+    }
+
+    .options1 ,.options2,.options3,.options4.options6,.options7 label .options8  {
+        font-size: 16px; /* ลดขนาดฟอนต์เพิ่มเติม */
+        
+    }
+    .options6{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .options8{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .options8 label{
+        margin-left: 20px;
+    }
+    
+}
