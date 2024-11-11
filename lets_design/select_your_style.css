@@ -1,0 +1,102 @@
+
+@media (max-width : 768px) {
+    .select-your-style {
+        width: 100% !important;
+        height: 626px !important;
+        background-color: #7D5A50;
+        padding-top: 20px;
+    }
+    .select-your-style h1 {
+        font-size: 32px;
+        color: #FFF9E3;
+    }
+    .select-your-style .box-style-slide {
+        width: 600px;
+        height: 300px;
+        background-color: #ffffff;
+        margin-top: 10px;
+    }
+    div.scroll-container {
+        width: 100%;
+        /* background-color: #333; */
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding: 10px;
+        border-radius: 4px;
+        /* height: 100%; */
+        scrollbar-width: thin; /* ลดขนาด scrollbar */
+        
+    }
+    .scroll-container::-webkit-scrollbar {
+        height: 8px; /* กำหนดความสูง scrollbar */
+      }
+      .scroll-container::-webkit-scrollbar-thumb {
+        background-color: #b3a28c; /* สีของ scrollbar */
+        border-radius: 10px;
+      }
+    div.scroll-container img {
+        padding: 10px;
+    }
+    .slider-item {
+        width: 103px;
+        height: 92px;
+        display: flex;
+        flex-direction: row;
+        /* position: relative; */
+        margin-bottom: 30px
+
+    }
+    .slider-item .hhhh {
+        position: relative;
+    }
+    .slider-item .content p {
+        /* position: absolute; */
+        /* bottom: 0;right: 0; */
+        /* transform: translate(-50%, -50%);  */
+        color: white;
+
+    }
+    .box-style {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 100px; */
+        /* margin-bottom: 140px; */
+    }
+    .input-prompt-box {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .generate-btn-custom {
+        margin-top: 20px;
+        width: 144px !important;
+        height: 36px !important;
+        background-color: #fff7e0;
+        color: #7D5A50;
+    }
+    .input-prompt-box textarea {
+        width: 100%;
+        height: 133px;
+        flex-wrap: wrap;
+        text-align: start;
+        outline: none;
+        border-radius: 4px;
+        border: none;
+        color: #7D5A50;
+        text-align: start; /* จัดตำแหน่งข้อความให้อยู่ทางซ้าย */
+        vertical-align: top; /* จัดข้อความให้เริ่มต้นจากด้านบน */
+        /* padding-bottom: 133px; */
+        /* padding: 0 !important; */
+        padding: 10px 10px;
+    }
+    .input-prompt-box:focus {
+        border: none; /* กรอบสีฟ้าเมื่อถูกเลือก */
+        background-color: #fff7e0; /* พื้นหลังสีครีมอ่อนเมื่อถูกเลือก */
+    }
+      
+}

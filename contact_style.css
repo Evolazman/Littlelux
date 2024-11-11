@@ -616,7 +616,7 @@ label[for="quali3"]{
     color: #FFF9E3;
     font-weight: 300;
     transition: all 0.3s;
-    margin-left: 50px;
+    margin-left: 70px;
     font-family: "Petrona", serif;
 }
 .submit:hover{
@@ -715,7 +715,7 @@ label[for="quali3"]{
         height: 45px;
         font-size: 24px;
         text-align: center;
-        margin-left: 142px;
+        margin-left:120px;
     }
 }
 
