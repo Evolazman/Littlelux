@@ -3,7 +3,7 @@
     height: 594px;
     padding: 0;
     position: relative;
-    background-color: white;
+    background-color: white !important;
     cursor: pointer;
     
 }
@@ -25,7 +25,7 @@
     transition: all 0.35s;
     border: solid #7D5A50 0.5px;
     border-radius: 4px;
-    z-index: 500;
+    z-index: 5000;
 }
 
 .product-item .detail h1 {
@@ -68,6 +68,7 @@
   }
   .mdi--heart--product:active {
     color: red;
+    transition: all 0.35s;
   }
   /* heart */
 

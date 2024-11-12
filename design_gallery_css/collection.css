@@ -51,6 +51,9 @@
     color: #7D5A50 !important;
     transition: all 0.35s;
 }
+.content-lifewear button:active ,.content-summer button:active{
+    transform: scale(0.9);
+}
 .collection .summer {
     margin-top: 130px;
 }
@@ -61,6 +64,7 @@
     display: none;
 }
 @media (max-width : 475px) {
+
     /* lifewear */
     /* lifewear */
     /* lifewear */
@@ -94,7 +98,7 @@
         justify-content: center;
         align-items: center;
         /* left:100px; */
-        width: 93% !important;
+        width: 93.8% !important;
         text-align: center;
         background-color: #7D5A50;
         height: 163px;
@@ -105,9 +109,31 @@
         left: 12px;
         background: rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(4.2px);
+        color: #FFF9E3;
 
 
     }
+    .content-lifewear-sm button {
+        width: 162px;
+        height: 44px;
+        background-color: #7D5A50;
+        color: #FFF9E3;
+        border: none;
+        border-radius: 4px;
+        transition: all 0.35s;
+    }
+    .content-lifewear-sm button:hover {
+        background-color: #FFF9E3;
+        border: #7D5A50 solid 1px !important;
+        color: #7D5A50 !important;
+    }
+    
+    .content-lifewear-sm button:active {
+        transform: scale(0.9);
+        /* color: #FFF9E3 !important; */
+    }
+ 
+
     .main-img-sm {
         display: block;
         width: 100%;

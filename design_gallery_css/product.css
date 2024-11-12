@@ -93,6 +93,11 @@ a.see-more-link {
    transition: all 0.35s;
    transform: scale(1.1);
    z-index: 100;
+   background-color: #ffffff;
+   color: #7D5A50;
+}
+.product-item:active {
+    transform: scale(0.9);
 }
 .count-product p {
     color: #7D5A50;
@@ -109,7 +114,43 @@ a.see-more-link {
     position: relative;
     transition: background-color 0.3s, border-color 0.3s;
 }
+
+/* Rectangle 1316 */
+.btn-themost-custom {
+    width: 104px;
+    height: 37px;
+    background: rgba(125, 90, 80, 0.5) !important;
+    backdrop-filter: blur(2.55px) !important;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
+    border: none !important;
+    transition: all 0.35s !important;
+}
+.btn-themost-custom:hover {
+    
+    background: rgba(125, 90, 80, 1) !important;
+    border: #7D5A50 !important;
+}
+
+.btn-themost-custom:active {
+    transform: scale(0.9);
+}
+/* Group 321 */
+
+.popular-stlye:hover {
+    filter: brightness(1.2);
+    transition: all 0.35s;
+    transform: scale(1.1);
+    /* color: #7D5A50; */
+    cursor: pointer;
+}
+.see-more-link:active {
+    transform: scale(1.1);
+    transition: all 0.35s;
+}
 @media (max-width: 475px) {
+    
     .see-more {
         display: none;
     }

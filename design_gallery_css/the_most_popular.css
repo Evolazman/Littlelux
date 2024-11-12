@@ -20,3 +20,14 @@
 .the-most-popular {
     margin-top: 30px;
 }
+.head-themost{
+    /* text-align: center; */
+    font-size: 48px;
+    color: #7D5A50;
+}
+@media (max-width : 475px) {
+    .head-themost{
+        text-align: center;
+        font-size: 32px;
+    }
+}

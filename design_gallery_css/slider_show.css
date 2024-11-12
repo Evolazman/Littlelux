@@ -23,7 +23,38 @@
     color: #7D5A50 !important;
     background-color: #7D5A50 !important;
 }
+.slider-show-btn {
+    width: 200px;
+    height: 58px;
+    color: #FFF9E3 !important;
+    background-color: #7D5A50 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-size: 32px !important;
+    transition: all 0.35s !important;
+}
+.slider-show-btn:hover {
+    background-color: #FFF9E3 !important;
+    color: #7D5A50 !important;
+    border: #7D5A50 solid 1px !important;
+}
+.slider-show-btn:active {
+    transform: scale(0.9);
+    
+}
+.carousel-caption  h5{
+    font-size: 32px;
+    font-weight: 300;
+}
 @media (max-width: 475px) {
+    .carousel-caption  h5{
+        font-size: 24px;
+    }
+    .slider-show-btn {
+        width: 168px;
+        height: 47px;
+        font-size: 24px !important;
+    }
     .carousel-item {
         height: 350px !important;
         width: 100% !important;
