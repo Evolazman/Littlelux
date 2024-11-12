@@ -146,7 +146,7 @@ a.see-more-link {
     cursor: pointer;
 }
 .see-more-link:active {
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: all 0.35s;
 }
 @media (max-width: 475px) {
