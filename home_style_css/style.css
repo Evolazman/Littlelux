@@ -10,8 +10,57 @@ body {
     box-sizing: border-box;
     transition: all 0.35s;
     
+    
 }
+btn-primary-custom-all hover-btn-primary active-btn-all
+hover-btn-primary active-btn-all
 
+.btn-primary-custom-all {
+    width: 200px !important;
+    height: 55px !important;
+    background-color: #7D5A50 !important;
+    color: #FFF9E3 !important;
+    border: none !important;
+    display: flex ; 
+    justify-content: center;
+    align-items: center;
+}
+.hover-btn-primary:hover {
+    background-color: #FFF9E3 !important;
+    color: #7D5A50 !important;
+    border: #5a5a5a solid 0.5px !important;
+    transition: all 0.35s;
+}
+.hover-btn-secondary:hover {
+    background-color: #7D5A50 !important;
+    color: #FFF9E3 !important;
+    border: #5a5a5a solid 0.5px !important;
+}
+.active-btn-all:active {
+    transform: scale(0.9) !important;
+    transition: all 0.35s !important;
+}
+/* .btn-primary-color-custom:hover ,.btn-primary-color-custom-about-us:hover {
+    background-color: #FFF9E3;
+    color: #7D5A50;
+    border: #5a5a5a solid 0.5px;
+} */
+/* .btn-primary-color-custom:active {
+    transform: scale(0.9);
+    transition: all 0.35s;
+} */
+/* .btn-secondary-color-custom:hover {
+    background-color: #7D5A50;
+    color: #FFF9E3;
+    border: #5a5a5a solid 0.5px;
+} */
+/* .btn-secondary-color-custom:active {
+    transform: scale(0.9);
+    transition: all 0.35s;
+}
+.btn-primary-color-custom-about-us:hover {
+
+} */
 
 /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */

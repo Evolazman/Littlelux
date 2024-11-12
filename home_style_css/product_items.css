@@ -4,9 +4,19 @@
     padding: 0;
     position: relative;
     background-color: white;
+    cursor: pointer;
     
 }
-
+.product-item img:active {
+    transform: scale(0.8);
+    transition: all 0.35s;
+    border-radius: 100px;
+}
+.product-item img:active .detail h1{
+    transform: scale(0.8);
+    transition: all 0.35s;
+  
+}
 .product-item img {
     width: 100%;
 }
@@ -15,7 +25,7 @@
     transition: all 0.35s;
     border: solid #7D5A50 0.5px;
     border-radius: 4px;
-    z-index: 50;
+    z-index: 500;
 }
 
 .product-item .detail h1 {
@@ -55,6 +65,9 @@
     right: 5px;
     top: 10px;
     font-size: 35px;
+  }
+  .mdi--heart--product:active {
+    color: red;
   }
   /* heart */
 
