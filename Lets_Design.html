@@ -127,7 +127,7 @@
                         <div class="btnn heart">
                             <span class="mdi--heart"></span>
                         </div>
-                        <div class="btnn user">
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="btnn user">
                             <span class="icon-park-solid--people"></span>
                         </div>
                     </div>
@@ -136,7 +136,80 @@
         </nav>
     </header>
 
+    <!-- Modal -->
 
+  <!-- Modal login -->
+   <div id="modal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex justify-content-center">
+            <div class="modal-content w-75">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Sign in</h5>
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <!-- Email input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="email" id="email1" class="form-control" />
+                            <label class="form-label" for="email1">Email address</label>
+                        </div>
+
+                        <!-- password input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="password" id="password1" class="form-control" />
+                            <label class="form-label" for="password1">Password</label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn">Login</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" class="btn btn-secondary-color-custom btn-secondary btn-block submit-btn-secon">register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    <!-- Modal  login-->
+
+    
+<!-- Modal register -->
+<div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog d-flex justify-content-center">
+        <div class="modal-content w-75">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Sign up</h5>
+                <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form>
+                    <!-- Name input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="text" id="name2" class="form-control" />
+                        <label class="form-label" for="name2">Name</label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="email2" class="form-control" />
+                        <label class="form-label" for="email2">Email address</label>
+                    </div>
+
+                    <!-- password input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="password" id="password2" class="form-control" />
+                        <label class="form-label" for="password2">Password</label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block submit-btn">Sign up</button>
+                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn-secon ">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal register -->
     <!-- Navbar -->
     <!-- Navbar -->
     <!-- Navbar -->

@@ -12,6 +12,7 @@ body {
     
     
 }
+
 .submit-btn {
     border: none !important;
     float: left;
@@ -153,13 +154,20 @@ nav.navbar {
 .navbar-nav .nav-link.active {
     text-decoration: underline;
 }
-
+.nav-link:active {
+    transform: scale(0.9);
+    transition: all 0.35s;
+}
 div.d-flex .btnn {
     font-size: 35px;
     margin-left: 20px;
     color: #fff;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+div.d-flex .btnn:active {
+    transform: scale(0.9);
 }
 div.d-flex .reset-margin {
     margin-left: 0px;
