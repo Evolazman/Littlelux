@@ -1,0 +1,296 @@
+body {
+    padding-top: 3rem;
+    /* padding-bottom: 3rem; */
+    color: #5a5a5a;
+    font-family: "Petrona", serif;
+    overflow-x: hidden;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+}
+
+/* main */
+
+/* Main Intro */
+#intro{
+    height: 520px;
+}
+
+.title_trends{
+    text-align: center;
+    padding-top: 75px;
+    font-size: 64px;
+    color: #7D5A50;
+}
+
+.paragraph{
+    text-align: center;
+    max-width: 800px; /* จำกัดความกว้างสูงสุดของข้อความ */
+    margin: 0 auto;/* ทำให้คอนเทนเนอร์ที่ครอบข้อความถูกจัดให้อยู่ตรงกลางของหน้าจอ */
+    color: #7D5A50;
+    line-height: 1.8; /* เว้นระยะห่างระหว่างบรรทัด */
+    font-size: 20px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.box_content{
+    position: absolute;
+    top: 210px;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    /* transition: opacity 0.5s ease; */
+}
+.box_content1{
+    position: absolute;
+    top: 210px;
+    left: 310px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    /* transition: opacity 0.5s ease; */
+}
+.content {
+    width: 341px;
+    height: 152px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* กำหนดสีพื้นหลังโปร่งแสง */
+    transition: opacity 0.5s ease;  /* transition ที่ใช้เมื่อ hover */
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.content1 {
+    width: 341px;
+    height: 152px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* กำหนดสีพื้นหลังโปร่งแสง */
+    transition: opacity 0.5s ease;  /* transition ที่ใช้เมื่อ hover */
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.content1 button{
+    margin-left: 30px;
+}
+.content1 h3 {
+    margin-left: 15px;
+    color: #7D5A50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* .gallery-item:hover .box_content {
+    opacity: 1;
+
+} */
+
+.content h3 {
+    color: #7D5A50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content button {
+    width: 182px;
+    height: 43px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #7D5A50;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* ขอบมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content button:hover {
+    background-color: #FFF9E3;
+    color: #7D5A50;
+}
+.content1 button {
+    width: 182px;
+    height: 43px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #7D5A50;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* ขอบมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content1 button:hover {
+    background-color: #FFF9E3;
+    color: #7D5A50;
+}
+
+
+@media (max-width: 428px) {
+    /* ปรับขนาด logo */
+    .logo-header {
+        width: 90px;
+        height: 45px;
+    }
+    #intro{
+        height: 274px;
+    }
+    .gallery-item {
+        position: relative;
+        overflow: visible; /* ทำให้เนื้อหาที่เกินออกไปไม่ถูกซ่อน */
+        margin-bottom: 180px;
+    }
+    .gallery-item img{
+        width: 100%;
+        height: 400px;
+    }
+    /* ปรับขนาด gallery เป็นคอลัมน์เดียว */
+    .gallery {
+        grid-template-columns: 1fr; /* หนึ่งคอลัมน์สำหรับหน้าจอโทรศัพท์ */
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    /* ปรับขนาดข้อความ title trends */
+    .title_trends {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    .box_content{
+        position: absolute;
+        /* bottom: 40px; */
+        left: 135px; 
+        transform: none;
+    }
+    .box_content1{
+        position: absolute;
+        /* bottom: 40px; */
+        left: 135px; 
+        transform: none;
+    }
+    
+    .image-container {
+        display: block; /* ให้แสดงผลแบบปกติ */
+    }
+    
+
+    /* ปรับขนาด content container */
+    .content {
+        display: block;
+        margin-top: 170px;
+        font-size: 24px;
+        width: 270px;
+        height: 84px;
+        padding: 20px;
+        background-color: transparent; /* ทำให้เบล็คกราวน์หายไป */  
+    }
+
+    .content h3 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .content button {
+        width: 141px;
+        height: 41px;
+        font-size: 20px;
+    }
+    .content1 {
+        margin-top: 170px;
+        font-size: 24px;
+        width: 270px;
+        height: 84px;
+        padding: 20px;
+        background-color: transparent; /* ทำให้เบล็คกราวน์หายไป */  
+    }
+
+    .content1 h3{
+        font-size: 24px;
+        font-size: 20px;
+        margin-left: 5px;
+        display: block;
+    }
+
+    .content1 button {
+        width: 141;
+        height: 41px;
+        font-size: 20px;
+        margin-left: 7px;
+        /* top: 10px; */
+        /* margin: 0; */
+        display: block;
+    }
+} 
+
+
+

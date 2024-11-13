@@ -98,7 +98,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="design_gallery.html">Design Gallery</a>
@@ -107,7 +107,7 @@
                             <a class="nav-link" href="Lets_Design.html">Let’s Design</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Trends</a>
+                            <a class="nav-link " href="trends.html" tabindex="-1" aria-disabled="true">Trends</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="contact_index.html" tabindex="-1" aria-disabled="true">Contact</a>
@@ -263,7 +263,7 @@
 
             <div class="row">
                 <div class="col-md-3 product-item">
-                    <span class="mdi--heart--product"></span>
+                    <span id="heart-1" class="mdi--heart--product"></span>
                     <img src="img/Rectangle 1213.png" alt="" srcset="">
                     <div class="detail">
                         <h1 class="name-item">
@@ -277,7 +277,7 @@
                 </div>
 
                 <div class="col-md-3 product-item">
-                    <span class="mdi--heart--product"></span>
+                    <span id="heart-2" class="mdi--heart--product"></span>
                     <img src="img/Rectangle 1214.png" alt="" srcset="">
                     <div class="detail">
                         <h1 class="name-item">
@@ -289,7 +289,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 product-item">
-                    <span class="mdi--heart--product"></span>
+                    <span id="heart-3" class="mdi--heart--product"></span>
                     <img src="img/Rectangle 1215.png" alt="" srcset="">
                     <br>
                     <div class="detail">
@@ -303,7 +303,7 @@
                 </div>
 
                 <div class="col-md-3 product-item">
-                    <span class="mdi--heart--product "></span>
+                    <span id="heart-4" class="mdi--heart--product "></span>
                     <img src="img/Rectangle 1216.png" alt="" srcset="">
                     <div class="detail">
                         <h1 class="name-item">
@@ -447,7 +447,7 @@
                             ของคุณจะก้าวล้ำหน้าด้านแฟชั่น
                         </p>
                         <p class="btn-center">
-                            <a class="btn btn-secondary btn-primary-color-custom-about-us hover-btn-primary active-btn-all" href="#">สำรวจเทรนด์</a>
+                            <a class="btn btn-secondary btn-primary-color-custom-about-us hover-btn-primary active-btn-all" href="trends.html">สำรวจเทรนด์</a>
                         </p>
 
                     </div>
@@ -607,7 +607,52 @@
         // ตรวจสอบขนาดหน้าจอใหม่เมื่อมีการปรับขนาดหน้าจอ
         window.addEventListener("resize", updateText);
 
+        const heart_1 = document.getElementById('heart-1');
+        const heart_2 = document.getElementById('heart-2');
+        const heart_3 = document.getElementById('heart-3');
+        const heart_4 = document.getElementById('heart-4');
 
+        // เพิ่ม event listener สำหรับการคลิก
+        heart_1.addEventListener("click", function() {
+            const class_heart = heart_1.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_1.style.backgroundColor = "red";
+                heart_1.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_1.classList.remove('active-heart')
+                heart_1.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_2.addEventListener("click", function() {
+            const class_heart = heart_2.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_2.style.backgroundColor = "red";
+                heart_2.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_2.classList.remove('active-heart')
+                heart_2.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_3.addEventListener("click", function() {
+            const class_heart = heart_3.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_3.style.backgroundColor = "red";
+                heart_3.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_3.classList.remove('active-heart')
+                heart_3.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_4.addEventListener("click", function() {
+            const class_heart = heart_4.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_4.style.backgroundColor = "red";
+                heart_4.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_4.classList.remove('active-heart')
+                heart_4.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
 
 
     </script>

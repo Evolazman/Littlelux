@@ -120,7 +120,7 @@
                             <a class="nav-link" href="Lets_Design.html">Let’s Design</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Trends</a>
+                            <a class="nav-link " href="trends.html" tabindex="-1" aria-disabled="true">Trends</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="contact_index.html" tabindex="-1" aria-disabled="true">Contact</a>
@@ -306,41 +306,49 @@
         <div class="container product-items-filter">
             <div class="row">
                 <div class="col-lg-3 col-6 product-item">
+                    <span id="heart-1"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-1.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
                 </div>
                 <div class="col-lg-3 col-6 product-item">
+                    <span id="heart-2"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-2.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
                 </div>
                 <div class="col-lg-3 col-6 product-item">
+                    <span id="heart-3"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-3.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
                 </div>
                 <div class="col-lg-3 col-6 product-item">
+                    <span id="heart-4"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-4.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
                 </div>
                 <div class="col-lg-3 col-6 product-item">
+                    <span id="heart-5"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-5.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
                 </div>
                 <div class="col-lg-3 col-6 product-item">
+                    <span id="heart-6"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-6.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
                 </div>
                 <div class="col-lg-3 col-6 product-item">
+                    <span id="heart-7"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-7.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
                 </div>
                 <div class="col-lg-3 col-6 product-item">
+                    <span id="heart-8"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-8.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item">฿1,500</p>
@@ -536,7 +544,101 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
         <!-- or -->
-    9<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+        const heart_1 = document.getElementById('heart-1');
+        const heart_2 = document.getElementById('heart-2');
+        const heart_3 = document.getElementById('heart-3');
+        const heart_4 = document.getElementById('heart-4');
+        const heart_5 = document.getElementById('heart-5');
+        const heart_6 = document.getElementById('heart-6');
+        const heart_7 = document.getElementById('heart-7');
+        const heart_8 = document.getElementById('heart-8');
+
+        // เพิ่ม event listener สำหรับการคลิก
+        heart_1.addEventListener("click", function() {
+            const class_heart = heart_1.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_1.style.backgroundColor = "red";
+                heart_1.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_1.classList.remove('active-heart')
+                heart_1.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_2.addEventListener("click", function() {
+            const class_heart = heart_2.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_2.style.backgroundColor = "red";
+                heart_2.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_2.classList.remove('active-heart')
+                heart_2.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_3.addEventListener("click", function() {
+            const class_heart = heart_3.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_3.style.backgroundColor = "red";
+                heart_3.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_3.classList.remove('active-heart')
+                heart_3.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_4.addEventListener("click", function() {
+            const class_heart = heart_4.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_4.style.backgroundColor = "red";
+                heart_4.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_4.classList.remove('active-heart')
+                heart_4.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_5.addEventListener("click", function() {
+            const class_heart = heart_5.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_5.style.backgroundColor = "red";
+                heart_5.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_5.classList.remove('active-heart')
+                heart_5.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_6.addEventListener("click", function() {
+            const class_heart = heart_6.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_6.style.backgroundColor = "red";
+                heart_6.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_6.classList.remove('active-heart')
+                heart_6.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_7.addEventListener("click", function() {
+            const class_heart = heart_7.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_7.style.backgroundColor = "red";
+                heart_7.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_7.classList.remove('active-heart')
+                heart_7.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+        heart_8.addEventListener("click", function() {
+            const class_heart = heart_8.classList
+            if (class_heart[class_heart.length - 1] != "active-heart") {
+                heart_8.style.backgroundColor = "red";
+                heart_8.classList.add('active-heart')
+            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+                heart_8.classList.remove('active-heart')
+                heart_8.style.backgroundColor = "#F4CB3F"; 
+            }
+        });
+    </script>
+
     
 </body>
 

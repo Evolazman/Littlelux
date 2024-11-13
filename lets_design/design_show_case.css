@@ -168,6 +168,13 @@
     background-color: white !important;
     color: #7D5A50;
 }
+.color-custom-btn{
+    font-family: "Prompt", serif;
+}
+.dropdown-menu a {
+    font-family: "Prompt", serif;
+    color: #7D5A50;
+}
 .color-custom-btn:hover {
     color: #7D5A50 !important;
 }
