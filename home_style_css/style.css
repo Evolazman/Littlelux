@@ -12,9 +12,35 @@ body {
     
     
 }
-btn-primary-custom-all hover-btn-primary active-btn-all
-hover-btn-primary active-btn-all
-
+.submit-btn {
+    border: none !important;
+    float: left;
+    width: 100px !important;
+    height: 50px !important;
+    font-family: "Petrona", serif !important;
+    /* margin-right: 30px; */
+    background-color: #7D5A50;
+}
+.submit-btn:hover {
+    border: #7D5A50 solid 1px !important;
+    color: #7D5A50;
+    background-color: #FFF9E3 !important; 
+}
+.submit-btn-secon {
+    /* border: none; */
+    float: right;
+    width: 150px !important;
+    height: 50px !important;
+    background-color: #FFF9E3 !important;
+    color: #7D5A50 !important;
+    border: #7D5A50 solid 1px !important;
+    font-family: "Petrona", serif !important;
+}
+.submit-btn-secon:hover {
+    border: #FFF9E3 solid 1px !important;
+    color: #FFF9E3 !important;
+    background-color: #7D5A50 !important; 
+}
 .btn-primary-custom-all {
     width: 200px !important;
     height: 55px !important;
