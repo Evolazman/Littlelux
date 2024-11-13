@@ -90,6 +90,7 @@ a.see-more-link {
 }
 .product-item {
     position: relative;
+    cursor: pointer;
 }
 .product-item:hover {
     border: #7D5A50 solid 1px ;
