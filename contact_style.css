@@ -622,6 +622,8 @@ label[for="quali3"]{
 .submit:hover{
     color: #7D5A50;
     background-color: #FFF9E3;
+    border : #7D5A50 solid 1px ;
+
 }
 @media screen and (max-width: 768px) {
      .options2,.options3,.options4,.options6,.options7,.options8{

@@ -8,7 +8,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- petrona font -->
-     
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link
@@ -27,6 +27,36 @@
 <link rel="stylesheet" href="home_style_css/style.css">
 <link rel="stylesheet" href="home_style_css/contact.css">
 <link rel="stylesheet" href="home_style_css/footer.css">
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.js'
+    integrity='sha512-k8FMS+oX2UczLWhVnKumkY9JqMaOIS/a3SKxV1+d6dd4DwU17qDppu2WxpZ9IX6QM7dqLzhZtT0ncGpeR+P3Mg=='
+    crossorigin='anonymous'></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css'
+    integrity='sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ=='
+    crossorigin='anonymous' />
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css'
+    integrity='sha512-UBY4KATrDAEKgEEU+RAfY4yWrK0ah43NGwNr5o/xmncxsT+rv8jp7MI3a00I0Ep3NbAx05U5kw3DvyNCoz+Wcw=='
+    crossorigin='anonymous' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery-3.1.1.min.js'
+    integrity='sha512-U6K1YLIFUWcvuw5ucmMtT9HH4t0uz3M366qrF5y4vnyH6dgDzndlcGvH/Lz5k8NFh80SN95aJ5rqGZEdaQZ7ZQ=='
+    crossorigin='anonymous'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js'
+    integrity='sha512-LaBO0tZh1+6Ebk+EnHt/WsGM0UnmkCXfQ1rfhGmpa5MXUdslNuSSELBRcteHKz4k4ny+Op10Ax2fPoTNq+VcUg=='
+    crossorigin='anonymous'></script>
+
+
+
+<!-- css link -->
+
+<!-- bx slider -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css'
+    integrity='sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ=='
+    crossorigin='anonymous' />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.js'
+    integrity='sha512-k8FMS+oX2UczLWhVnKumkY9JqMaOIS/a3SKxV1+d6dd4DwU17qDppu2WxpZ9IX6QM7dqLzhZtT0ncGpeR+P3Mg=='
+    crossorigin='anonymous'></script>
+<!-- bx slider -->
+
 <style>
     .bd-placeholder-img {
         font-size: 1.125rem;
@@ -71,7 +101,8 @@
                             <a class="nav-link active" href="trends.html" tabindex="-1" aria-disabled="true">Trends</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contact_index.html" tabindex="-1" aria-disabled="true">Contact</a>
+                            <a class="nav-link " href="contact_index.html" tabindex="-1"
+                                aria-disabled="true">Contact</a>
                         </li>
                     </ul>
                     <div class="d-flex">
@@ -79,7 +110,9 @@
                             <span class="solar--cart-bold"></span>
                         </div>
                         <div class="btnn search">
-                            <span class="mdi--search"></span>
+                            <a style="margin: 0px;" class="btnn" href="#search">
+                                <span  class="mdi--search"></span>
+                            </a>
                         </div>
                         <div class="btnn heart">
                             <span class="mdi--heart"></span>
@@ -93,84 +126,96 @@
         </nav>
     </header>
     <!-- Modal -->
+    <div id="search">
+        <button type="button" class="close">x</button>
+        <form method="get" action="https://www.google.com/search">
+            <input type="text" name="q" value="" placeholder="Type search" />
+            <button class="search" type="button">Search</button>
+        </form>
+    </div>
+    <!-- Modal login -->
+    <div id="modal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex justify-content-center">
+                <div class="modal-content w-75">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">Sign in</h5>
+                        <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close"
+                            data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form>
+                            <!-- Email input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <input type="email" id="email1" class="form-control" />
+                                <label class="form-label" for="email1">Email address</label>
+                            </div>
 
-  <!-- Modal login -->
-   <div id="modal">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <!-- password input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <input type="password" id="password1" class="form-control" />
+                                <label class="form-label" for="password1">Password</label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn">Login</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
+                                class="btn btn-secondary-color-custom btn-secondary btn-block submit-btn-secon">register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal  login-->
+
+
+    <!-- Modal register -->
+    <div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
         <div class="modal-dialog d-flex justify-content-center">
             <div class="modal-content w-75">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">Sign in</h5>
-                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="exampleModalLabel2">Sign up</h5>
+                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close"
+                        data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
                     <form>
+                        <!-- Name input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="name2" class="form-control" />
+                            <label class="form-label" for="name2">Name</label>
+                        </div>
+
                         <!-- Email input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="email" id="email1" class="form-control" />
-                            <label class="form-label" for="email1">Email address</label>
+                            <input type="email" id="email2" class="form-control" />
+                            <label class="form-label" for="email2">Email address</label>
                         </div>
 
                         <!-- password input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="password" id="password1" class="form-control" />
-                            <label class="form-label" for="password1">Password</label>
+                            <input type="password" id="password2" class="form-control" />
+                            <label class="form-label" for="password2">Password</label>
                         </div>
 
                         <!-- Submit button -->
-                        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn">Login</button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" class="btn btn-secondary-color-custom btn-secondary btn-block submit-btn-secon">register</button>
+                        <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                            class="btn btn-primary btn-block submit-btn">Sign up</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn-secon ">Login</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-   </div>
-    <!-- Modal  login-->
-
-    
-<!-- Modal register -->
-<div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog d-flex justify-content-center">
-        <div class="modal-content w-75">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel2">Sign up</h5>
-                <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-4">
-                <form>
-                    <!-- Name input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="text" id="name2" class="form-control" />
-                        <label class="form-label" for="name2">Name</label>
-                    </div>
-
-                    <!-- Email input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="email" id="email2" class="form-control" />
-                        <label class="form-label" for="email2">Email address</label>
-                    </div>
-
-                    <!-- password input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="password" id="password2" class="form-control" />
-                        <label class="form-label" for="password2">Password</label>
-                    </div>
-
-                    <!-- Submit button -->
-                    <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block submit-btn">Sign up</button>
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn-secon ">Login</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal register -->
+    <!-- Modal register -->
 
     <!-- Navbar -->
     <!-- Navbar -->
     <!-- Navbar -->
-    
+
 
     <!-- Main Content Section -->
     <main>
@@ -271,7 +316,7 @@
             </div>
         </div>
 
-    <!-- Contact -->
+        <!-- Contact -->
         <!-- Contact -->
         <!-- Contact -->
         <div class="container contact">
@@ -282,8 +327,9 @@
 
                 </div>
                 <div class="col-lg-6 input-email">
-                    <button type="button" class="btn-primary-color-custom hover-btn-primary active-btn-all">Subscribe</button>
-                    
+                    <button type="button"
+                        class="btn-primary-color-custom hover-btn-primary active-btn-all">Subscribe</button>
+
                     <input type="email" placeholder="Your email">
                 </div>
             </div>
@@ -323,6 +369,23 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
+    <script>
+    $(function () {
+            $('a[href="#search"]').on('click', function (event) {
+                event.preventDefault();
+                $('#search').addClass('open');
+                $('#search > form > input[type="text"]').focus();
+            });
+
+            $('#search, #search button.close').on('click keyup', function (event) {
+                if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+                    $(this).removeClass('open');
+                }
+            });
+        });
+    </script>
 </body>
 
 

@@ -122,7 +122,9 @@
                             <span class="solar--cart-bold"></span>
                         </div>
                         <div class="btnn search">
-                            <span class="mdi--search"></span>
+                            <a style="margin: 0px;" class="btnn" href="#search">
+                                <span  class="mdi--search"></span>
+                            </a>
                         </div>
                         <div class="btnn heart">
                             <span class="mdi--heart"></span>
@@ -137,7 +139,13 @@
     </header>
 
     <!-- Modal -->
-
+    <div id="search">
+        <button type="button" class="close">x</button>
+        <form method="get" action="https://www.google.com/search">
+            <input type="text" name="q" value="" placeholder="Type search" />
+            <button class="search" type="button">Search</button>
+        </form>
+    </div>
   <!-- Modal login -->
    <div id="modal">
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -461,8 +469,21 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+
     <script>
-    
+    $(function () {
+            $('a[href="#search"]').on('click', function (event) {
+                event.preventDefault();
+                $('#search').addClass('open');
+                $('#search > form > input[type="text"]').focus();
+            });
+
+            $('#search, #search button.close').on('click keyup', function (event) {
+                if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+                    $(this).removeClass('open');
+                }
+            });
+        });
     </script>
 </body>
 

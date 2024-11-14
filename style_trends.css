@@ -175,6 +175,7 @@ body {
 .content button:hover {
     background-color: #FFF9E3;
     color: #7D5A50;
+    border: #7D5A50 solid 1px;
 }
 .content1 button {
     width: 182px;

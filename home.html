@@ -110,15 +110,18 @@
                             <a class="nav-link " href="trends.html" tabindex="-1" aria-disabled="true">Trends</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contact_index.html" tabindex="-1" aria-disabled="true">Contact</a>
+                            <a class="nav-link " href="contact_index.html" tabindex="-1"
+                                aria-disabled="true">Contact</a>
                         </li>
                     </ul>
                     <div class="d-flex">
-                        <div class="btnn cart reset-margin">
-                            <span class="solar--cart-bold"></span>
+                        <div  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btnn cart reset-margin">
+                                <span class="solar--cart-bold"></span>
                         </div>
                         <div class="btnn search">
-                            <span class="mdi--search"></span>
+                            <a style="margin: 0px;" class="btnn" href="#search">
+                                <span class="mdi--search"></span>
+                            </a>
                         </div>
                         <div class="btnn heart">
                             <span class="mdi--heart"></span>
@@ -131,86 +134,165 @@
             </div>
         </nav>
     </header>
+    <!-- search modal -->
+    <!-- search modal -->
+    <!-- search modal -->
+    <div id="search">
+        <button type="button" class="close">x</button>
+        <form method="get" action="https://www.google.com/search">
+            <input type="text" name="q" value="" placeholder="Type search" />
+            <button class="search" type="button">Search</button>
+        </form>
+    </div>
+
+  <!-- Modal -->
+  <!-- cart modal  -->
+    <!-- cart modal  -->
+    <!-- cart modal  -->
+    <!-- cart modal  -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+            <h5 class="modal-title" id="exampleModalLabel">
+                Shopping Cart
+            </h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <table class="table table-image">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="w-25">
+                            <img src="img/filter-3.png"
+                                class="img-fluid img-thumbnail" alt="Sheep">
+                        </td>
+                        <td>Vans Sk8-Hi MTE Shoes</td>
+                        <td>Carlie Blouse purple</td>
+                        <td class="qty"><input type="number" class="form-control" id="input1" value="2" ></td>
+                        <td>฿1,500</td>
+                        <td>
+                            <a href="#" class="btn btn-danger btn-sm">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-end">
+                <h5>Total: <span class="price text-success">฿1,500</span></h5>
+            </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- cart modal  -->
+    <!-- cart modal  -->
+    <!-- cart modal  -->
+    <!-- cart modal  -->
 
     <!-- Navbar -->
     <!-- Navbar -->
     <!-- Navbar -->
-     <!-- Button trigger modal -->
+    <!-- Button trigger modal -->
 
-<!-- Modal -->
+    <!-- Modal -->
 
-  <!-- Modal login -->
-   <div id="modal">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal login -->
+    <div id="modal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex justify-content-center">
+                <div class="modal-content w-75">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">Sign in</h5>
+                        <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close"
+                            data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form>
+                            <!-- Email input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <input type="email" id="email1" class="form-control" />
+                                <label class="form-label" for="email1">Email address</label>
+                            </div>
+
+                            <!-- password input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <input type="password" id="password1" class="form-control" />
+                                <label class="form-label" for="password1">Password</label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn">Login</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
+                                class="btn btn-secondary-color-custom btn-secondary btn-block submit-btn-secon">register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal  login-->
+
+
+    <!-- Modal register -->
+    <div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
         <div class="modal-dialog d-flex justify-content-center">
             <div class="modal-content w-75">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">Sign in</h5>
-                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="exampleModalLabel2">Sign up</h5>
+                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close"
+                        data-mdb-dismiss="modal" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
                     <form>
+                        <!-- Name input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="name2" class="form-control" />
+                            <label class="form-label" for="name2">Name</label>
+                        </div>
+
                         <!-- Email input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="email" id="email1" class="form-control" />
-                            <label class="form-label" for="email1">Email address</label>
+                            <input type="email" id="email2" class="form-control" />
+                            <label class="form-label" for="email2">Email address</label>
                         </div>
 
                         <!-- password input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="password" id="password1" class="form-control" />
-                            <label class="form-label" for="password1">Password</label>
+                            <input type="password" id="password2" class="form-control" />
+                            <label class="form-label" for="password2">Password</label>
                         </div>
 
                         <!-- Submit button -->
-                        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn">Login</button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" class="btn btn-secondary-color-custom btn-secondary btn-block submit-btn-secon">register</button>
+                        <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                            class="btn btn-primary btn-block submit-btn">Sign up</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn-secon ">Login</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-   </div>
-    <!-- Modal  login-->
-
-    
-<!-- Modal register -->
-<div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog d-flex justify-content-center">
-        <div class="modal-content w-75">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel2">Sign up</h5>
-                <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" data-bs-dismiss="modal"  aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-4">
-                <form>
-                    <!-- Name input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="text" id="name2" class="form-control" />
-                        <label class="form-label" for="name2">Name</label>
-                    </div>
-
-                    <!-- Email input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="email" id="email2" class="form-control" />
-                        <label class="form-label" for="email2">Email address</label>
-                    </div>
-
-                    <!-- password input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="password" id="password2" class="form-control" />
-                        <label class="form-label" for="password2">Password</label>
-                    </div>
-
-                    <!-- Submit button -->
-                    <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block submit-btn">Sign up</button>
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary btn-primary-color-custom btn-primary-custom-al btn-block submit-btn-secon ">Login</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal register -->
+    <!-- Modal register -->
 
     <!-- Hero banner  -->
     <!-- Hero banner  -->
@@ -238,9 +320,11 @@
                             <p class="caption">ออกแบบด้วย AI ร่วมมือกับแบรนด์ชั้นนำ เพื่อความทันสมัยของเด็กๆ</p>
                             <br>
                             <p class="content-btn">
-                                <a class="btn active-btn-all btn-lg hover-btn-primary btn-primary-color-custom margin-btn" href="Lets_Design.html">เริ่มต้นออกแบบ</a>
+                                <a class="btn active-btn-all btn-lg hover-btn-primary btn-primary-color-custom margin-btn"
+                                    href="Lets_Design.html">เริ่มต้นออกแบบ</a>
 
-                                <a class="btn active-btn-all btn-lg hover-btn-secondary btn-secondary-color-custom" href="design_gallery.html">ดูสินค้าของเรา</a>
+                                <a class="btn active-btn-all btn-lg hover-btn-secondary btn-secondary-color-custom"
+                                    href="design_gallery.html">ดูสินค้าของเรา</a>
                             </p>
                         </div>
                     </div>
@@ -256,7 +340,7 @@
                         <div class="carousel-caption">
                             <h1>Design Gallery</h1>
                             <p>Take advantage of the latest pieces from our Summer 2024 collection at low prices.</p>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -271,7 +355,7 @@
                         <div class="carousel-caption text-end">
                             <h1>Trends</h1>
                             <!-- <p>Some representative placeholder content for the third slide of this carousel.</p> -->
-                            
+
                         </div>
                     </div>
                 </div>
@@ -313,7 +397,8 @@
 
 
                     <p class="btn-center">
-                        <a class="btn btn-secondary btn-primary-color-custom-about-us hover-btn-primary active-btn-all" href="#">ดูเพิ่มเติม
+                        <a class="btn btn-secondary btn-primary-color-custom-about-us hover-btn-primary active-btn-all"
+                            href="#">ดูเพิ่มเติม
                             &raquo;</a>
                     </p>
                 </div><!-- /.col-lg-4 -->
@@ -520,7 +605,8 @@
                             ของคุณจะก้าวล้ำหน้าด้านแฟชั่น
                         </p>
                         <p class="btn-center">
-                            <a class="btn btn-secondary btn-primary-color-custom-about-us hover-btn-primary active-btn-all" href="trends.html">สำรวจเทรนด์</a>
+                            <a class="btn btn-secondary btn-primary-color-custom-about-us hover-btn-primary active-btn-all"
+                                href="trends.html">สำรวจเทรนด์</a>
                         </p>
 
                     </div>
@@ -548,8 +634,9 @@
 
                 </div>
                 <div class="col-lg-6 input-email">
-                    <button type="button" class="btn-primary-color-custom hover-btn-primary active-btn-all">Subscribe</button>
-                    
+                    <button type="button"
+                        class="btn-primary-color-custom hover-btn-primary active-btn-all">Subscribe</button>
+
                     <input type="email" placeholder="Your email">
                 </div>
             </div>
@@ -686,46 +773,61 @@
         const heart_4 = document.getElementById('heart-4');
 
         // เพิ่ม event listener สำหรับการคลิก
-        heart_1.addEventListener("click", function() {
+        heart_1.addEventListener("click", function () {
             const class_heart = heart_1.classList
             if (class_heart[class_heart.length - 1] != "active-heart") {
                 heart_1.style.backgroundColor = "red";
                 heart_1.classList.add('active-heart')
-            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+            } else if (class_heart[class_heart.length - 1] === "active-heart") {
                 heart_1.classList.remove('active-heart')
-                heart_1.style.backgroundColor = "#F4CB3F"; 
+                heart_1.style.backgroundColor = "#F4CB3F";
             }
         });
-        heart_2.addEventListener("click", function() {
+        heart_2.addEventListener("click", function () {
             const class_heart = heart_2.classList
             if (class_heart[class_heart.length - 1] != "active-heart") {
                 heart_2.style.backgroundColor = "red";
                 heart_2.classList.add('active-heart')
-            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+            } else if (class_heart[class_heart.length - 1] === "active-heart") {
                 heart_2.classList.remove('active-heart')
-                heart_2.style.backgroundColor = "#F4CB3F"; 
+                heart_2.style.backgroundColor = "#F4CB3F";
             }
         });
-        heart_3.addEventListener("click", function() {
+        heart_3.addEventListener("click", function () {
             const class_heart = heart_3.classList
             if (class_heart[class_heart.length - 1] != "active-heart") {
                 heart_3.style.backgroundColor = "red";
                 heart_3.classList.add('active-heart')
-            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+            } else if (class_heart[class_heart.length - 1] === "active-heart") {
                 heart_3.classList.remove('active-heart')
-                heart_3.style.backgroundColor = "#F4CB3F"; 
+                heart_3.style.backgroundColor = "#F4CB3F";
             }
         });
-        heart_4.addEventListener("click", function() {
+        heart_4.addEventListener("click", function () {
             const class_heart = heart_4.classList
             if (class_heart[class_heart.length - 1] != "active-heart") {
                 heart_4.style.backgroundColor = "red";
                 heart_4.classList.add('active-heart')
-            }else if (class_heart[class_heart.length - 1] === "active-heart") {
+            } else if (class_heart[class_heart.length - 1] === "active-heart") {
                 heart_4.classList.remove('active-heart')
-                heart_4.style.backgroundColor = "#F4CB3F"; 
+                heart_4.style.backgroundColor = "#F4CB3F";
             }
         });
+
+        $(function () {
+            $('a[href="#search"]').on('click', function (event) {
+                event.preventDefault();
+                $('#search').addClass('open');
+                $('#search > form > input[type="text"]').focus();
+            });
+
+            $('#search, #search button.close').on('click keyup', function (event) {
+                if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+                    $(this).removeClass('open');
+                }
+            });
+        });
+        
 
 
     </script>
