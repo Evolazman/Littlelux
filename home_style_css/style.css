@@ -434,6 +434,9 @@ svg.bd-placeholder-img rect {
 }
 
 @media (max-width: 475px) {
+    .submit-btn-secon {
+        width: 130px !important;
+    }
     /* Hero Banner */
 
 
