@@ -403,6 +403,10 @@ svg.bd-placeholder-img rect {
     font-size: 40px;
     font-family: "Prompt", serif;
 }
+.email-form {
+    width: 250px !important;
+    float: right;
+}
 
 
 
