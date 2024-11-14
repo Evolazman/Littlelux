@@ -621,7 +621,7 @@ label[for="quali3"]{
 }
 .submit:hover{
     color: #FFF9E3;
-    background-color: #EDD17B;
+    background-color: #FFF9E3;
 }
 @media screen and (max-width: 768px) {
      .options2,.options3,.options4,.options6,.options7,.options8{
@@ -654,24 +654,24 @@ label[for="quali3"]{
         margin-left: 0px;
     }
     .options1 label[for="child1"]{
-        gap: 0px;
-        margin-right: 130px;
+        gap: 5px;
+        margin-right: 100px;
         margin-left: 20px;
     }
     .options1 label[for="child2"]{
-        gap: 0px;
-        margin-right: 130px;
+        gap: 5px;
+        margin-right: 100px;
         margin-left: 15px;
     }
     .options1 label[for="child3"]{
-        gap: 2px;
-        margin-right: 125px;
+        gap: 5px;
+        margin-right: 95px;
         margin-left: 20px;
     }
     .options1 label[for="child4"]{
         /* margin-right: 150px; */
-        margin-left: 17px;
-        gap: 2px;
+        margin-left: 15px;
+        gap: 5px;
     }
     
     .options5{
@@ -681,18 +681,18 @@ label[for="quali3"]{
     }
     .options5 label[for="web1"]{
         gap: 4px;
-        margin-right: 120px;
+        margin-right: 100px;
         margin-left: 20px;
     }
     .options5 label[for="web2"]{
         gap: 4px;
-        margin-right: 100px;
+        margin-right: 80px;
         margin-left: 15px;
     }
     .options5 label[for="web3"]{
-        gap: 0px;
-        margin-right: 95px;
-        margin-left: 15px;
+        gap: 4px;
+        margin-right: 80px;
+        margin-left: 20px;
     }
     .options5 label[for="web4"]{
         /* margin-right: 150px; */
