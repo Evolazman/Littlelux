@@ -149,7 +149,7 @@
 <!-- cart modal  -->
     <!-- cart modal  -->
     <!-- cart modal  -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header border-bottom-0">
@@ -338,14 +338,11 @@
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                             Sort by
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" id="Popularity" href="#">สินค้ายอดนิยม (Popularity)</a></li>
-                            <li><a class="dropdown-item" id="Newest-Arrivals" href="#">สินค้าใหม่ล่าสุด (Newest
-                                    Arrivals)</a></li>
-                            <li><a class="dropdown-item" id="Low-to-High" href="#">ราคาต่ำไปสูง (Price: Low to High)
-                                </a></li>
-                            <li><a  class="dropdown-item" id="High-to-Low" href="#">ราคาสูงไปต่ำ (Price: High to Low)
-                                </a></li>
+                        <ul class="dropdown-menu button-group filter-button-group" aria-labelledby="dropdownMenuButton1">
+                            <button data-filter="*" type="button" class="filter-btn">ทั้งหมด</button>
+                            <button data-filter=".new" type="button" class="filter-btn">สินค้าใหม่ล่าสุด</button>
+                            <button data-filter=".popular" type="button" class="filter-btn">สินค้ายอดนิยม</button>
+                            <button data-filter=".brand" type="button" class="filter-btn">แบรนด์</button>
                         </ul>
                     </div>
 
@@ -443,51 +440,51 @@
 
         </div>
         </div>
-        <div class="container product-items-filter">
-            <div class="row" id="box-item-product">
-                <div class="col-lg-3 col-6 product-item">
+        <div class="container product-items-filter" >
+            <div class="row" id="box-item-product" >
+                <div class="col-lg-3 col-6 product-item popular">
                     <span id="heart-1"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-1.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item" value="1600">฿1,600</p>
                 </div>
-                <div class="col-lg-3 col-6 product-item">
+                <div class="col-lg-3 col-6 product-item popular">
                     <span id="heart-2"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-2.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item" value="1500">฿1,500</p>
                 </div>
-                <div class="col-lg-3 col-6 product-item">
+                <div class="col-lg-3 col-6 product-item brand">
                     <span id="heart-3"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-3.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item" value="1500">฿1,500</p>
                 </div>
-                <div class="col-lg-3 col-6 product-item">
+                <div class="col-lg-3 col-6 product-item brand">
                     <span id="heart-4"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-4.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item" value="1500">฿1,500</p>
                 </div>
-                <div class="col-lg-3 col-6 product-item">
+                <div class="col-lg-3 col-6 product-item popular">
                     <span id="heart-5"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-5.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item" value="1500">฿1,500</p>
                 </div>
-                <div class="col-lg-3 col-6 product-item">
+                <div class="col-lg-3 col-6 product-item brand">
                     <span id="heart-6"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-6.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item" value="1500">฿1,500</p>
                 </div>
-                <div class="col-lg-3 col-6 product-item">
+                <div class="col-lg-3 col-6 product-item brand">
                     <span id="heart-7"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-7.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
                     <p class="price-item" value="1500">฿1,500</p>
                 </div>
-                <div class="col-lg-3 col-6 product-item">
+                <div class="col-lg-3 col-6 product-item new">
                     <span id="heart-8"  class="mdi--heart-result"></span>
                     <img style="width: 100%;" src="img/filter-8.png" alt="hat" srcset="">
                     <h4 class="item-name">Carlie Blouse purple</h4>
@@ -1035,6 +1032,15 @@
                     $(this).removeClass('open');
                 }
             });
+        });
+        // init Isotope
+        var $grid = $('#box-item-product').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.filter-button-group').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
         });
     </script>
     
