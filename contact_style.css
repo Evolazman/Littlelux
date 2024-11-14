@@ -620,7 +620,7 @@ label[for="quali3"]{
     font-family: "Petrona", serif;
 }
 .submit:hover{
-    color: #FFF9E3;
+    color: #7D5A50;
     background-color: #FFF9E3;
 }
 @media screen and (max-width: 768px) {
@@ -696,7 +696,7 @@ label[for="quali3"]{
     }
     .options5 label[for="web4"]{
         /* margin-right: 150px; */
-        margin-left: 17px;
+        margin-left: 15px;
         gap: 4px;
     }
     .options6{

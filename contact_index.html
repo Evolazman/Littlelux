@@ -416,7 +416,7 @@
 
             </div>
             <div class="col-lg-6 input-email">
-                <button type="button" class="btn-primary-color-custom">Subscribe</button>
+                <button type="button" class="btn-primary-color-custom hover-btn-primary active-btn-all">Subscribe</button>
 
                 <input type="email" placeholder="Your email">
             </div>
@@ -462,36 +462,7 @@
         crossorigin="anonymous"></script>
 
     <script>
-        function Change_img(img) {
-            document.getElementById("img-show-box").innerHTML = '<img src="img/' + img + '" alt="" srcset="">'
-        }
-        function hide_tools() {
-            try {
-                const element = document.getElementById('hide-tool-1')
-                const classes = element.classList;
-                console.log(classes[classes.length - 1])
-                if (classes[classes.length - 1] === "box-img-maker") {
-                    const html_text = '<button class="image-maker" type="button"><span class="ic--baseline-image set-icon-img-manker"></span><h4 class="name-tool">Graphic</h4></button>'
-                    document.getElementById("hide-tool-1").innerHTML = html_text;
-                    const element = document.getElementById("hide-tool-1");
-                    element.classList.add("show-btn-now"); // เพิ่มคลาส 'new-class' ให้กับ div
-
-                    const rotate = document.getElementById('arrow-rotate')
-                    rotate.style.rotate = "0deg" ;
-                }else {
-                    const html_text = ''
-                    document.getElementById("hide-tool-1").innerHTML = html_text;
-                    const element = document.getElementById("hide-tool-1");
-                    element.classList.remove("show-btn-now");
-                    const rotate = document.getElementById('arrow-rotate')
-                    rotate.style.rotate = "180deg" ;
-                }
-                
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        // hide_tools()
+    
     </script>
 </body>
 
