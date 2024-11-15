@@ -9,6 +9,7 @@ body {
     font-family: "Petrona", serif;
     box-sizing: border-box;
     transition: all 0.35s;
+    overflow-x: hidden;
     
     
 }
