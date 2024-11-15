@@ -84,6 +84,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: none;
+    float: right;
 }
 .generate-btn-custom:hover {
     background-color: #7D5A50 !important;
