@@ -441,7 +441,9 @@ svg.bd-placeholder-img rect {
     /* Hero Banner */
 
 
-
+    .link-contact div.col {
+        padding-left: 30px !important;
+    }
     .navbar-toggler {
         position: absolute;
         right: 20px;
